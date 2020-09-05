@@ -25,6 +25,7 @@ target.unicode
 target.utf16
 true
 utf16
+verbose
 end defines
 begin defines_data
 NET_20=1
@@ -52,6 +53,7 @@ target.unicode=true
 target.utf16=true
 true=1
 utf16=1
+verbose=1
 end defines_data
 begin modules
 M cs.system.LoaderOptimization

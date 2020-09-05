@@ -1,0 +1,12 @@
+/nologo
+/optimize+
+/debug-
+/unsafe-
+/warn:0
+/out:bin/csharp.dll
+/target:library
+/reference:bin/maglev.dll
+src\EnumValue.cs
+src\englishauction\EnglishAuction.cs
+src\Type.cs
+src\UInt.cs
