@@ -18,69 +18,55 @@ public class EnglishAuction
 	 * @param end end time of auction
 	 * @param startingPrice starting price of auction
 	 * @param reservePrice reserve price for the auction (0 = none)
+	 * @param priceIncrement price increments for bids in the auction
 	 * @return {number} The x value.
 	*/
-	Create(start, end, startingPrice, reservePrice)
+	Create(start, end, startingPrice, reservePrice, priceIncrement)
 	{
 		//TODO: C# let bus = maglev.maglev.MagLev.getInstance('default');
-		//TODO: C# let args = [start, end, startingPrice, reservePrice];
+		//TODO: C# let args = [start, end, startingPrice, reservePrice, priceIncrement];
 		//TODO: C# let ret = bus.call('EnglishAuction.Create', args);
 		//TODO: C# return ret;
 	}
 
 	/**
-	 * Bid in an auction
-	 * @param auctionId auction id to bid in
-	 * @param userId user id that's bidding
-	 * @param price bid price
+	 * Get the start of an auction
+	 * Will return a timestamp in milliseconds
+	 * @param auctionId auction id
 	 * @return {number} The x value.
 	*/
-	Bid(auctionId, userId, price)
+	GetStart(auctionId)
 	{
 		//TODO: C# let bus = maglev.maglev.MagLev.getInstance('default');
-		//TODO: C# let args = [auctionId, userId, price];
-		//TODO: C# let ret = bus.call('EnglishAuction.Bid', args);
+		//TODO: C# let args = [auctionId];
+		//TODO: C# let ret = bus.call('EnglishAuction.GetStart', args);
 		//TODO: C# return ret;
 	}
 
 	/**
-	 * Automatically bid against others in an auction (up to the specified amount)
-	 * @param auctionId auction id to bid in
-	 * @param userId user id that's bidding
-	 * @param price bid price
+	 * Check if auction has ended
+	 * @param auctionId auction id
 	 * @return {number} The x value.
 	*/
-	AutoBid(auctionId, userId, price)
+	GetEnd(auctionId)
 	{
 		//TODO: C# let bus = maglev.maglev.MagLev.getInstance('default');
-		//TODO: C# let args = [auctionId, userId, price];
-		//TODO: C# let ret = bus.call('EnglishAuction.AutoBid', args);
+		//TODO: C# let args = [auctionId];
+		//TODO: C# let ret = bus.call('EnglishAuction.GetEnd', args);
 		//TODO: C# return ret;
 	}
 
 	/**
-	 * Force an auction to close and specify the winning bid.
-	 * @param auctionId auction id to bid in
-	 * @param userId user id that's bidding
-	 * @param price bid price
+	 * Check if an auction has started yet
+	 * @param auctionId auction id
 	 * @return {number} The x value.
 	*/
-	ForceClose(auctionId, userId, price)
+	HasStarted(auctionId)
 	{
 		//TODO: C# let bus = maglev.maglev.MagLev.getInstance('default');
-		//TODO: C# let args = [auctionId, userId, price];
-		//TODO: C# let ret = bus.call('EnglishAuction.ForceClose', args);
+		//TODO: C# let args = [auctionId];
+		//TODO: C# let ret = bus.call('EnglishAuction.HasStarted', args);
 		//TODO: C# return ret;
-	}
-
-	/**
-	 * TBD
-	*/
-	Status()
-	{
-		//TODO: C# let bus = maglev.maglev.MagLev.getInstance('default');
-		//TODO: C# let args = [];
-		//TODO: bus.call('EnglishAuction.Status', args);
 	}
 
 }

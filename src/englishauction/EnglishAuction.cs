@@ -47,7 +47,16 @@ namespace englishauction {
 		
 		public virtual void registerMyMethods() {
 			#line 20 "/my-component/src/englishauction/EnglishAuction.hx"
-			this.maglev.register("EnglishAuction.Create", ( (( global::englishauction.EnglishAuction_registerMyMethods_20__Fun.__hx_current != null )) ? (global::englishauction.EnglishAuction_registerMyMethods_20__Fun.__hx_current) : (global::englishauction.EnglishAuction_registerMyMethods_20__Fun.__hx_current = ((global::englishauction.EnglishAuction_registerMyMethods_20__Fun) (new global::englishauction.EnglishAuction_registerMyMethods_20__Fun()) )) ));
+			global::maglev.MagLev bus = this.maglev;
+			this.maglev.register("EnglishAuction.Create", ( (( global::englishauction.EnglishAuction_registerMyMethods_21__Fun.__hx_current != null )) ? (global::englishauction.EnglishAuction_registerMyMethods_21__Fun.__hx_current) : (global::englishauction.EnglishAuction_registerMyMethods_21__Fun.__hx_current = ((global::englishauction.EnglishAuction_registerMyMethods_21__Fun) (new global::englishauction.EnglishAuction_registerMyMethods_21__Fun()) )) ));
+			#line 25 "/my-component/src/englishauction/EnglishAuction.hx"
+			this.maglev.register("EnglishAuction.GetStart", new global::englishauction.EnglishAuction_registerMyMethods_25__Fun(bus));
+			#line 36 "/my-component/src/englishauction/EnglishAuction.hx"
+			this.maglev.register("EnglishAuction.GetEnd", new global::englishauction.EnglishAuction_registerMyMethods_36__Fun(bus));
+			#line 47 "/my-component/src/englishauction/EnglishAuction.hx"
+			this.maglev.register("EnglishAuction.HasStarted", new global::englishauction.EnglishAuction_registerMyMethods_47__Fun(bus));
+			#line 59 "/my-component/src/englishauction/EnglishAuction.hx"
+			this.maglev.register("EnglishAuction.HasEnded", new global::englishauction.EnglishAuction_registerMyMethods_59__Fun(bus));
 		}
 		#line default
 		
@@ -151,22 +160,192 @@ namespace englishauction {
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
 namespace englishauction {
-	public class EnglishAuction_registerMyMethods_20__Fun : global::haxe.lang.Function {
+	public class EnglishAuction_registerMyMethods_21__Fun : global::haxe.lang.Function {
 		
-		public EnglishAuction_registerMyMethods_20__Fun() : base(1, 0) {
+		public EnglishAuction_registerMyMethods_21__Fun() : base(1, 0) {
 		}
 		
 		
-		public static global::englishauction.EnglishAuction_registerMyMethods_20__Fun __hx_current;
+		public static global::englishauction.EnglishAuction_registerMyMethods_21__Fun __hx_current;
 		
 		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 20 "/my-component/src/englishauction/EnglishAuction.hx"
+			#line 21 "/my-component/src/englishauction/EnglishAuction.hx"
 			global::Array<object> args = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::Array<object>) (global::Array<object>.__hx_cast<object>(((global::Array) (((object) (__fn_float1) )) ))) )) : (((global::Array<object>) (global::Array<object>.__hx_cast<object>(((global::Array) (__fn_dyn1) ))) )) );
 			string ret = "idhere";
-			#line 22 "/my-component/src/englishauction/EnglishAuction.hx"
+			#line 23 "/my-component/src/englishauction/EnglishAuction.hx"
 			return ((object) (ret) );
 		}
 		#line default
+		
+	}
+}
+
+
+
+#pragma warning disable 109, 114, 219, 429, 168, 162
+namespace englishauction {
+	public class EnglishAuction_registerMyMethods_25__Fun : global::haxe.lang.Function {
+		
+		public EnglishAuction_registerMyMethods_25__Fun(global::maglev.MagLev bus) : base(1, 0) {
+			#line 25 "/my-component/src/englishauction/EnglishAuction.hx"
+			this.bus = bus;
+		}
+		#line default
+		
+		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
+			#line 25 "/my-component/src/englishauction/EnglishAuction.hx"
+			global::Array<object> args = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::Array<object>) (global::Array<object>.__hx_cast<object>(((global::Array) (((object) (__fn_float1) )) ))) )) : (((global::Array<object>) (global::Array<object>.__hx_cast<object>(((global::Array) (__fn_dyn1) ))) )) );
+			string id = global::haxe.lang.Runtime.toString(((object) (args[0]) ));
+			#line 27 "/my-component/src/englishauction/EnglishAuction.hx"
+			global::haxe.ds.StringMap<object> auction = ((global::haxe.ds.StringMap<object>) (global::haxe.ds.StringMap<object>.__hx_cast<object>(((global::haxe.ds.StringMap) (((object) (this.bus.call("Persistence.Get", new global::Array<object>(new object[]{((object) ("Auction") ), ((object) ("FindById") ), ((object) (new global::Array<string>(new string[]{id})) )}))) )) ))) );
+			double start = ((double) (0) );
+			#line 29 "/my-component/src/englishauction/EnglishAuction.hx"
+			if (global::Std.isOfType((auction.@get("start")).toDynamic(), ((object) (typeof(string)) ))) {
+				#line 30 "/my-component/src/englishauction/EnglishAuction.hx"
+				global::Date _this = global::Date.fromString(global::haxe.lang.Runtime.toString((auction.@get("start")).toDynamic()));
+				#line 30 "/my-component/src/englishauction/EnglishAuction.hx"
+				start = ( ((double) (((long) (( ((long) (global::System.TimeZone.CurrentTimeZone.ToUniversalTime(((global::System.DateTime) (_this.date) )).Ticks) ) - ((long) (global::Date.epochTicks) ) )) )) ) / ((double) (global::System.TimeSpan.TicksPerMillisecond) ) );
+			}
+			else {
+				#line 32 "/my-component/src/englishauction/EnglishAuction.hx"
+				start = ((double) (global::haxe.lang.Runtime.toDouble((auction.@get("start")).toDynamic())) );
+			}
+			
+			#line 34 "/my-component/src/englishauction/EnglishAuction.hx"
+			return ((object) (start) );
+		}
+		#line default
+		
+		public global::maglev.MagLev bus;
+		
+	}
+}
+
+
+
+#pragma warning disable 109, 114, 219, 429, 168, 162
+namespace englishauction {
+	public class EnglishAuction_registerMyMethods_36__Fun : global::haxe.lang.Function {
+		
+		public EnglishAuction_registerMyMethods_36__Fun(global::maglev.MagLev bus) : base(1, 0) {
+			#line 36 "/my-component/src/englishauction/EnglishAuction.hx"
+			this.bus = bus;
+		}
+		#line default
+		
+		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
+			#line 36 "/my-component/src/englishauction/EnglishAuction.hx"
+			global::Array<object> args = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::Array<object>) (global::Array<object>.__hx_cast<object>(((global::Array) (((object) (__fn_float1) )) ))) )) : (((global::Array<object>) (global::Array<object>.__hx_cast<object>(((global::Array) (__fn_dyn1) ))) )) );
+			string id = global::haxe.lang.Runtime.toString(((object) (args[0]) ));
+			#line 38 "/my-component/src/englishauction/EnglishAuction.hx"
+			global::haxe.ds.StringMap<object> auction = ((global::haxe.ds.StringMap<object>) (global::haxe.ds.StringMap<object>.__hx_cast<object>(((global::haxe.ds.StringMap) (((object) (this.bus.call("Persistence.Get", new global::Array<object>(new object[]{((object) ("Auction") ), ((object) ("FindById") ), ((object) (new global::Array<string>(new string[]{id})) )}))) )) ))) );
+			double end = ((double) (0) );
+			#line 40 "/my-component/src/englishauction/EnglishAuction.hx"
+			if (global::Std.isOfType((auction.@get("end")).toDynamic(), ((object) (typeof(string)) ))) {
+				#line 41 "/my-component/src/englishauction/EnglishAuction.hx"
+				global::Date _this = global::Date.fromString(global::haxe.lang.Runtime.toString((auction.@get("end")).toDynamic()));
+				#line 41 "/my-component/src/englishauction/EnglishAuction.hx"
+				end = ( ((double) (((long) (( ((long) (global::System.TimeZone.CurrentTimeZone.ToUniversalTime(((global::System.DateTime) (_this.date) )).Ticks) ) - ((long) (global::Date.epochTicks) ) )) )) ) / ((double) (global::System.TimeSpan.TicksPerMillisecond) ) );
+			}
+			else {
+				#line 43 "/my-component/src/englishauction/EnglishAuction.hx"
+				end = ((double) (global::haxe.lang.Runtime.toDouble((auction.@get("end")).toDynamic())) );
+			}
+			
+			#line 45 "/my-component/src/englishauction/EnglishAuction.hx"
+			return ((object) (end) );
+		}
+		#line default
+		
+		public global::maglev.MagLev bus;
+		
+	}
+}
+
+
+
+#pragma warning disable 109, 114, 219, 429, 168, 162
+namespace englishauction {
+	public class EnglishAuction_registerMyMethods_47__Fun : global::haxe.lang.Function {
+		
+		public EnglishAuction_registerMyMethods_47__Fun(global::maglev.MagLev bus) : base(1, 0) {
+			#line 47 "/my-component/src/englishauction/EnglishAuction.hx"
+			this.bus = bus;
+		}
+		#line default
+		
+		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
+			#line 47 "/my-component/src/englishauction/EnglishAuction.hx"
+			global::Array<object> args = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::Array<object>) (global::Array<object>.__hx_cast<object>(((global::Array) (((object) (__fn_float1) )) ))) )) : (((global::Array<object>) (global::Array<object>.__hx_cast<object>(((global::Array) (__fn_dyn1) ))) )) );
+			string id = global::haxe.lang.Runtime.toString(((object) (args[0]) ));
+			#line 49 "/my-component/src/englishauction/EnglishAuction.hx"
+			global::haxe.ds.StringMap<object> auction = ((global::haxe.ds.StringMap<object>) (global::haxe.ds.StringMap<object>.__hx_cast<object>(((global::haxe.ds.StringMap) (((object) (this.bus.call("Persistence.Get", new global::Array<object>(new object[]{((object) ("Auction") ), ((object) ("FindById") ), ((object) (new global::Array<string>(new string[]{id})) )}))) )) ))) );
+			double start = ((double) (0) );
+			#line 51 "/my-component/src/englishauction/EnglishAuction.hx"
+			if (global::Std.isOfType((auction.@get("start")).toDynamic(), ((object) (typeof(string)) ))) {
+				#line 52 "/my-component/src/englishauction/EnglishAuction.hx"
+				global::Date _this = global::Date.fromString(global::haxe.lang.Runtime.toString((auction.@get("start")).toDynamic()));
+				#line 52 "/my-component/src/englishauction/EnglishAuction.hx"
+				start = ( ((double) (((long) (( ((long) (global::System.TimeZone.CurrentTimeZone.ToUniversalTime(((global::System.DateTime) (_this.date) )).Ticks) ) - ((long) (global::Date.epochTicks) ) )) )) ) / ((double) (global::System.TimeSpan.TicksPerMillisecond) ) );
+			}
+			else {
+				#line 54 "/my-component/src/englishauction/EnglishAuction.hx"
+				start = ((double) (global::haxe.lang.Runtime.toDouble((auction.@get("start")).toDynamic())) );
+			}
+			
+			#line 56 "/my-component/src/englishauction/EnglishAuction.hx"
+			global::Date _this1 = new global::Date(((global::System.DateTime) (global::System.DateTime.Now) ));
+			#line 56 "/my-component/src/englishauction/EnglishAuction.hx"
+			double now = ( ((double) (((long) (( ((long) (global::System.TimeZone.CurrentTimeZone.ToUniversalTime(((global::System.DateTime) (_this1.date) )).Ticks) ) - ((long) (global::Date.epochTicks) ) )) )) ) / ((double) (global::System.TimeSpan.TicksPerMillisecond) ) );
+			return ((object) (( start <= now )) );
+		}
+		#line default
+		
+		public global::maglev.MagLev bus;
+		
+	}
+}
+
+
+
+#pragma warning disable 109, 114, 219, 429, 168, 162
+namespace englishauction {
+	public class EnglishAuction_registerMyMethods_59__Fun : global::haxe.lang.Function {
+		
+		public EnglishAuction_registerMyMethods_59__Fun(global::maglev.MagLev bus) : base(1, 0) {
+			#line 59 "/my-component/src/englishauction/EnglishAuction.hx"
+			this.bus = bus;
+		}
+		#line default
+		
+		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
+			#line 59 "/my-component/src/englishauction/EnglishAuction.hx"
+			global::Array<object> args = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::Array<object>) (global::Array<object>.__hx_cast<object>(((global::Array) (((object) (__fn_float1) )) ))) )) : (((global::Array<object>) (global::Array<object>.__hx_cast<object>(((global::Array) (__fn_dyn1) ))) )) );
+			string id = global::haxe.lang.Runtime.toString(((object) (args[0]) ));
+			#line 61 "/my-component/src/englishauction/EnglishAuction.hx"
+			global::haxe.ds.StringMap<object> auction = ((global::haxe.ds.StringMap<object>) (global::haxe.ds.StringMap<object>.__hx_cast<object>(((global::haxe.ds.StringMap) (((object) (this.bus.call("Persistence.Get", new global::Array<object>(new object[]{((object) ("Auction") ), ((object) ("FindById") ), ((object) (new global::Array<string>(new string[]{id})) )}))) )) ))) );
+			double end = ((double) (0) );
+			#line 63 "/my-component/src/englishauction/EnglishAuction.hx"
+			if (global::Std.isOfType((auction.@get("end")).toDynamic(), ((object) (typeof(string)) ))) {
+				#line 64 "/my-component/src/englishauction/EnglishAuction.hx"
+				global::Date _this = global::Date.fromString(global::haxe.lang.Runtime.toString((auction.@get("end")).toDynamic()));
+				#line 64 "/my-component/src/englishauction/EnglishAuction.hx"
+				end = ( ((double) (((long) (( ((long) (global::System.TimeZone.CurrentTimeZone.ToUniversalTime(((global::System.DateTime) (_this.date) )).Ticks) ) - ((long) (global::Date.epochTicks) ) )) )) ) / ((double) (global::System.TimeSpan.TicksPerMillisecond) ) );
+			}
+			else {
+				#line 66 "/my-component/src/englishauction/EnglishAuction.hx"
+				end = ((double) (global::haxe.lang.Runtime.toDouble((auction.@get("end")).toDynamic())) );
+			}
+			
+			#line 68 "/my-component/src/englishauction/EnglishAuction.hx"
+			global::Date _this1 = new global::Date(((global::System.DateTime) (global::System.DateTime.Now) ));
+			#line 68 "/my-component/src/englishauction/EnglishAuction.hx"
+			double now = ( ((double) (((long) (( ((long) (global::System.TimeZone.CurrentTimeZone.ToUniversalTime(((global::System.DateTime) (_this1.date) )).Ticks) ) - ((long) (global::Date.epochTicks) ) )) )) ) / ((double) (global::System.TimeSpan.TicksPerMillisecond) ) );
+			return ((object) (( now > end )) );
+		}
+		#line default
+		
+		public global::maglev.MagLev bus;
 		
 	}
 }
