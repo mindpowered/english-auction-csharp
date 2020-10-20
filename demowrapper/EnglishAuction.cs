@@ -69,5 +69,58 @@ public class EnglishAuction
 		//TODO: C# return ret;
 	}
 
+	/**
+	 * Create a bid in an auction
+	 * @param auctionId auction id
+	 * @param userId user id
+	 * @param price price bud
+	*/
+	Bid(auctionId, userId, price)
+	{
+		//TODO: C# let bus = maglev.maglev.MagLev.getInstance('default');
+		//TODO: C# let args = [auctionId, userId, price];
+		//TODO: bus.call('EnglishAuction.Bid', args);
+	}
+
+	/**
+	 * Get the highest bidder in an auction
+	 * @param auctionId auction id
+	 * @return {number} The x value.
+	*/
+	GetHighestBidder(auctionId)
+	{
+		//TODO: C# let bus = maglev.maglev.MagLev.getInstance('default');
+		//TODO: C# let args = [auctionId];
+		//TODO: C# let ret = bus.call('EnglishAuction.GetHighestBidder', args);
+		//TODO: C# return ret;
+	}
+
+	/**
+	 * Get the highest bids in an auction
+	 * @param auctionId auction id
+	 * @param numBids max number of highest bids to return
+	 * @return {number} The x value.
+	*/
+	GetHighestBids(auctionId, numBids)
+	{
+		//TODO: C# let bus = maglev.maglev.MagLev.getInstance('default');
+		//TODO: C# let args = [auctionId, numBids];
+		//TODO: C# let ret = bus.call('EnglishAuction.GetHighestBids', args);
+		//TODO: C# return ret;
+	}
+
+	/**
+	 * Get the number of bids in an auction
+	 * @param auctionId auction id
+	 * @return {number} The x value.
+	*/
+	GetNumberOfBids(auctionId)
+	{
+		//TODO: C# let bus = maglev.maglev.MagLev.getInstance('default');
+		//TODO: C# let args = [auctionId];
+		//TODO: C# let ret = bus.call('EnglishAuction.GetNumberOfBids', args);
+		//TODO: C# return ret;
+	}
+
 }
 
