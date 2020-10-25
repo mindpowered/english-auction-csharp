@@ -135,5 +135,58 @@ public class EnglishAuction
 		//TODO: C# return ret;
 	}
 
+	/**
+	 * Get the reserve price for the specified auction
+	 * @param auctionId auction id
+	 * @return {number} The x value.
+	*/
+	GetReservePrice(auctionId)
+	{
+		//TODO: C# let bus = maglev.maglev.MagLev.getInstance('default');
+		//TODO: C# let args = [auctionId];
+		//TODO: C# let ret = bus.call('EnglishAuction.GetReservePrice', args);
+		//TODO: C# return ret;
+	}
+
+	/**
+	 * Get the starting price for the specified auction
+	 * @param auctionId auction id
+	 * @return {number} The x value.
+	*/
+	GetStartingPrice(auctionId)
+	{
+		//TODO: C# let bus = maglev.maglev.MagLev.getInstance('default');
+		//TODO: C# let args = [auctionId];
+		//TODO: C# let ret = bus.call('EnglishAuction.GetStartingPrice', args);
+		//TODO: C# return ret;
+	}
+
+	/**
+	 * Get the time remaining for the specified auction
+	 * @param auctionId auction id
+	 * @param now current unix timestamp
+	 * @return {number} The x value.
+	*/
+	CalcTimeRemaining(auctionId, now)
+	{
+		//TODO: C# let bus = maglev.maglev.MagLev.getInstance('default');
+		//TODO: C# let args = [auctionId, now];
+		//TODO: C# let ret = bus.call('EnglishAuction.CalcTimeRemaining', args);
+		//TODO: C# return ret;
+	}
+
+	/**
+	 * Get the minimum next bid for the specified auction
+	 * @param auctionId auction id
+	 * @return {number} The x value.
+	*/
+	CalcMinimumBid(auctionId)
+	{
+		//TODO: C# let bus = maglev.maglev.MagLev.getInstance('default');
+		//TODO: C# let args = [auctionId];
+		//TODO: C# let ret = bus.call('EnglishAuction.CalcMinimumBid', args);
+		//TODO: C# return ret;
+	}
+
 }
 
