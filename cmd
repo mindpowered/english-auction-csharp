@@ -7,6 +7,10 @@
 /target:library
 /reference:bin/maglev.dll
 src\EnumValue.cs
+src\englishauction\BidRepository.cs
 src\englishauction\EnglishAuction.cs
 src\Type.cs
+src\englishauction\BidModel.cs
+src\englishauction\AuctionRepository.cs
+src\englishauction\AuctionModel.cs
 src\UInt.cs

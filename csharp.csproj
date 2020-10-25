@@ -61,9 +61,17 @@
 	
     <Compile Include="src\EnumValue.cs"/>
 	
+    <Compile Include="src\englishauction\BidRepository.cs"/>
+	
     <Compile Include="src\englishauction\EnglishAuction.cs"/>
 	
     <Compile Include="src\Type.cs"/>
+	
+    <Compile Include="src\englishauction\BidModel.cs"/>
+	
+    <Compile Include="src\englishauction\AuctionRepository.cs"/>
+	
+    <Compile Include="src\englishauction\AuctionModel.cs"/>
 	
     <Compile Include="src\UInt.cs"/>
 	

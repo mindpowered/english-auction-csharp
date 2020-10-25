@@ -122,5 +122,18 @@ public class EnglishAuction
 		//TODO: C# return ret;
 	}
 
+	/**
+	 * Get the price increment for the specified auction
+	 * @param auctionId auction id
+	 * @return {number} The x value.
+	*/
+	GetPriceIncrement(auctionId)
+	{
+		//TODO: C# let bus = maglev.maglev.MagLev.getInstance('default');
+		//TODO: C# let args = [auctionId];
+		//TODO: C# let ret = bus.call('EnglishAuction.GetPriceIncrement', args);
+		//TODO: C# return ret;
+	}
+
 }
 
