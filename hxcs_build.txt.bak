@@ -175,6 +175,9 @@ C englishauction.EnglishAuction_registerMyMethods_249__Fun
 C englishauction.EnglishAuction_registerMyMethods_260__Fun
 C englishauction.EnglishAuction_registerMyMethods_271__Fun
 C englishauction.EnglishAuction_registerMyMethods_282__Fun
+C englishauction.EnglishAuction_registerMyMethods_302__Fun
+C englishauction.EnglishAuction_registerMyMethods_325__Fun
+C englishauction.EnglishAuction_registerMyMethods_330__Fun
 M System.Reflection.Emit.TypeToken
 M System.Runtime.Serialization.IFormatterConverter
 M System.ValueType

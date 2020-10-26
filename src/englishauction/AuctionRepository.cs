@@ -7,7 +7,7 @@ namespace englishauction {
 		static AuctionRepository() {
 			unchecked{
 				#line 5 "/my-component/src/englishauction/AuctionRepository.hx"
-				global::haxe.lang.FieldLookup.addFields(new int[]{3254785, 770176554, 958206052, 1835582091}, new string[]{"Add", "Edit", "Remove", "FindById"});
+				global::haxe.lang.FieldLookup.addFields(new int[]{3254785, 770176554, 958206052, 1833056016, 1835582091}, new string[]{"Add", "Edit", "Remove", "FindAuctionsEnding", "FindById"});
 			}
 		}
 		#line default
@@ -79,6 +79,53 @@ namespace englishauction {
 		}
 		#line default
 		
+		public virtual global::Array<object> FindAuctionsEnding(int endfrom, int endto, int page, int perpage, string sort, bool asc) {
+			#line 49 "/my-component/src/englishauction/AuctionRepository.hx"
+			global::Array<object> auctions = new global::Array<object>();
+			global::maglev.MagLevArray myargs = global::maglev.MagLevArray.create();
+			#line 51 "/my-component/src/englishauction/AuctionRepository.hx"
+			myargs.push(global::maglev.MagLevString.fromString("EnglishAuction.Auction"));
+			myargs.push(global::maglev.MagLevString.fromString("FindEnding"));
+			#line 53 "/my-component/src/englishauction/AuctionRepository.hx"
+			global::maglev.MagLevArray myargs2 = global::maglev.MagLevArray.create();
+			myargs2.push(global::maglev.MagLevNumber.fromInt(endfrom));
+			#line 55 "/my-component/src/englishauction/AuctionRepository.hx"
+			myargs2.push(global::maglev.MagLevNumber.fromInt(endto));
+			myargs2.push(global::maglev.MagLevNumber.fromInt(page));
+			#line 57 "/my-component/src/englishauction/AuctionRepository.hx"
+			myargs2.push(global::maglev.MagLevNumber.fromInt(perpage));
+			myargs2.push(global::maglev.MagLevString.fromString(sort));
+			#line 59 "/my-component/src/englishauction/AuctionRepository.hx"
+			myargs2.push(global::maglev.MagLevBoolean.fromBool(asc));
+			myargs.push(myargs2);
+			#line 61 "/my-component/src/englishauction/AuctionRepository.hx"
+			global::maglev.MagLevResult res = this.bus.call("Persistence.Get", myargs);
+			global::maglev.MagLevArray arr = ((global::maglev.MagLevArray) (res.getResult()) );
+			#line 63 "/my-component/src/englishauction/AuctionRepository.hx"
+			int i = 0;
+			while (( i < arr.size() )) {
+				#line 65 "/my-component/src/englishauction/AuctionRepository.hx"
+				global::englishauction.AuctionModel model = new global::englishauction.AuctionModel();
+				global::maglev.MagLevObject resobj = ((global::maglev.MagLevObject) (arr.@get(i)) );
+				#line 67 "/my-component/src/englishauction/AuctionRepository.hx"
+				model.id = (((global::maglev.MagLevString) (resobj.@get("auctionId")) )).getString();
+				model.start = (((global::maglev.MagLevNumber) (resobj.@get("start")) )).getInt();
+				#line 69 "/my-component/src/englishauction/AuctionRepository.hx"
+				model.end = (((global::maglev.MagLevNumber) (resobj.@get("end")) )).getInt();
+				model.startingPrice = (((global::maglev.MagLevNumber) (resobj.@get("startingPrice")) )).getFloat();
+				#line 71 "/my-component/src/englishauction/AuctionRepository.hx"
+				model.reservePrice = (((global::maglev.MagLevNumber) (resobj.@get("reservePrice")) )).getFloat();
+				model.priceIncrement = (((global::maglev.MagLevNumber) (resobj.@get("priceIncrement")) )).getFloat();
+				#line 73 "/my-component/src/englishauction/AuctionRepository.hx"
+				auctions.push(model);
+				 ++ i;
+			}
+			
+			#line 76 "/my-component/src/englishauction/AuctionRepository.hx"
+			return auctions;
+		}
+		#line default
+		
 		public override object __hx_setField(string field, int hash, object @value, bool handleProperties) {
 			unchecked {
 				#line 5 "/my-component/src/englishauction/AuctionRepository.hx"
@@ -109,6 +156,13 @@ namespace englishauction {
 			unchecked {
 				#line 5 "/my-component/src/englishauction/AuctionRepository.hx"
 				switch (hash) {
+					case 1833056016:
+					{
+						#line 5 "/my-component/src/englishauction/AuctionRepository.hx"
+						return ((global::haxe.lang.Function) (new global::haxe.lang.Closure(this, "FindAuctionsEnding", 1833056016)) );
+					}
+					
+					
 					case 1835582091:
 					{
 						#line 5 "/my-component/src/englishauction/AuctionRepository.hx"
@@ -161,6 +215,13 @@ namespace englishauction {
 			unchecked {
 				#line 5 "/my-component/src/englishauction/AuctionRepository.hx"
 				switch (hash) {
+					case 1833056016:
+					{
+						#line 5 "/my-component/src/englishauction/AuctionRepository.hx"
+						return this.FindAuctionsEnding(((int) (global::haxe.lang.Runtime.toInt(dynargs[0])) ), ((int) (global::haxe.lang.Runtime.toInt(dynargs[1])) ), ((int) (global::haxe.lang.Runtime.toInt(dynargs[2])) ), ((int) (global::haxe.lang.Runtime.toInt(dynargs[3])) ), global::haxe.lang.Runtime.toString(dynargs[4]), global::haxe.lang.Runtime.toBool(dynargs[5]));
+					}
+					
+					
 					case 1835582091:
 					{
 						#line 5 "/my-component/src/englishauction/AuctionRepository.hx"
