@@ -206,5 +206,39 @@ public class EnglishAuction
 		//TODO: C# return ret;
 	}
 
+	/**
+	 * Get a list of auctions based on their start time
+	 * @param startfrom start from
+	 * @param startto start to
+	 * @param page 
+	 * @param perpage number of auctions per page
+	 * @param sort field to sort by
+	 * @param asc ascending (true) or descending (false)
+	 * @return {number} The x value.
+	*/
+	GetAuctionsStarting(startfrom, startto, page, perpage, sort, asc)
+	{
+		//TODO: C# let bus = maglev.maglev.MagLev.getInstance('default');
+		//TODO: C# let args = [startfrom, startto, page, perpage, sort, asc];
+		//TODO: C# let ret = bus.call('EnglishAuction.GetAuctionsStarting', args);
+		//TODO: C# return ret;
+	}
+
+	/**
+	 * Get a list of currently running auctions
+	 * @param page 
+	 * @param perpage number of auctions per page
+	 * @param sort field to sort by
+	 * @param asc ascending (true) or descending (false)
+	 * @return {number} The x value.
+	*/
+	GetOpenAuctions(page, perpage, sort, asc)
+	{
+		//TODO: C# let bus = maglev.maglev.MagLev.getInstance('default');
+		//TODO: C# let args = [page, perpage, sort, asc];
+		//TODO: C# let ret = bus.call('EnglishAuction.GetOpenAuctions', args);
+		//TODO: C# return ret;
+	}
+
 }
 

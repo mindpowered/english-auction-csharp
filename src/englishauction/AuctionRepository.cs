@@ -7,7 +7,7 @@ namespace englishauction {
 		static AuctionRepository() {
 			unchecked{
 				#line 5 "/my-component/src/englishauction/AuctionRepository.hx"
-				global::haxe.lang.FieldLookup.addFields(new int[]{3254785, 770176554, 958206052, 1833056016, 1835582091}, new string[]{"Add", "Edit", "Remove", "FindAuctionsEnding", "FindById"});
+				global::haxe.lang.FieldLookup.addFields(new int[]{3254785, 89092393, 770176554, 958206052, 1362300083, 1833056016, 1835582091}, new string[]{"Add", "FindAuctionsStarting", "Edit", "Remove", "FindOpenAuctions", "FindAuctionsEnding", "FindById"});
 			}
 		}
 		#line default
@@ -48,80 +48,174 @@ namespace englishauction {
 			myargs.push(global::maglev.MagLevString.fromString("EnglishAuction.Auction"));
 			#line 28 "/my-component/src/englishauction/AuctionRepository.hx"
 			myargs.push(global::maglev.MagLevString.fromString("FindById"));
-			myargs.push(global::maglev.MagLevString.fromString(auctionId));
+			global::maglev.MagLevArray myargs2 = global::maglev.MagLevArray.create();
 			#line 30 "/my-component/src/englishauction/AuctionRepository.hx"
+			myargs2.push(global::maglev.MagLevString.fromString(auctionId));
+			myargs.push(myargs2);
+			#line 32 "/my-component/src/englishauction/AuctionRepository.hx"
 			global::maglev.MagLevResult res = this.bus.call("Persistence.Get", myargs);
 			if (res.isError()) {
-				#line 32 "/my-component/src/englishauction/AuctionRepository.hx"
+				#line 34 "/my-component/src/englishauction/AuctionRepository.hx"
 				throw ((global::System.Exception) (global::haxe.Exception.thrown(res.getError().getMessage())) );
 			}
 			
-			#line 34 "/my-component/src/englishauction/AuctionRepository.hx"
+			#line 36 "/my-component/src/englishauction/AuctionRepository.hx"
 			if (global::Std.isOfType(((object) (res.getResult()) ), ((object) (typeof(global::maglev.MagLevNull)) ))) {
-				#line 35 "/my-component/src/englishauction/AuctionRepository.hx"
+				#line 37 "/my-component/src/englishauction/AuctionRepository.hx"
 				return null;
 			}
 			
-			#line 37 "/my-component/src/englishauction/AuctionRepository.hx"
+			#line 39 "/my-component/src/englishauction/AuctionRepository.hx"
 			global::maglev.MagLevObject resobj = ((global::maglev.MagLevObject) (res.getResult()) );
 			global::englishauction.AuctionModel model = new global::englishauction.AuctionModel();
-			#line 39 "/my-component/src/englishauction/AuctionRepository.hx"
+			#line 41 "/my-component/src/englishauction/AuctionRepository.hx"
 			model.id = (((global::maglev.MagLevString) (resobj.@get("auctionId")) )).getString();
 			model.start = (((global::maglev.MagLevNumber) (resobj.@get("start")) )).getInt();
-			#line 41 "/my-component/src/englishauction/AuctionRepository.hx"
+			#line 43 "/my-component/src/englishauction/AuctionRepository.hx"
 			model.end = (((global::maglev.MagLevNumber) (resobj.@get("end")) )).getInt();
 			model.startingPrice = (((global::maglev.MagLevNumber) (resobj.@get("startingPrice")) )).getFloat();
-			#line 43 "/my-component/src/englishauction/AuctionRepository.hx"
+			#line 45 "/my-component/src/englishauction/AuctionRepository.hx"
 			model.reservePrice = (((global::maglev.MagLevNumber) (resobj.@get("reservePrice")) )).getFloat();
 			model.priceIncrement = (((global::maglev.MagLevNumber) (resobj.@get("priceIncrement")) )).getFloat();
-			#line 45 "/my-component/src/englishauction/AuctionRepository.hx"
+			#line 47 "/my-component/src/englishauction/AuctionRepository.hx"
 			return model;
 		}
 		#line default
 		
 		public virtual global::Array<object> FindAuctionsEnding(int endfrom, int endto, int page, int perpage, string sort, bool asc) {
-			#line 49 "/my-component/src/englishauction/AuctionRepository.hx"
+			#line 51 "/my-component/src/englishauction/AuctionRepository.hx"
 			global::Array<object> auctions = new global::Array<object>();
 			global::maglev.MagLevArray myargs = global::maglev.MagLevArray.create();
-			#line 51 "/my-component/src/englishauction/AuctionRepository.hx"
+			#line 53 "/my-component/src/englishauction/AuctionRepository.hx"
 			myargs.push(global::maglev.MagLevString.fromString("EnglishAuction.Auction"));
 			myargs.push(global::maglev.MagLevString.fromString("FindEnding"));
-			#line 53 "/my-component/src/englishauction/AuctionRepository.hx"
+			#line 55 "/my-component/src/englishauction/AuctionRepository.hx"
 			global::maglev.MagLevArray myargs2 = global::maglev.MagLevArray.create();
 			myargs2.push(global::maglev.MagLevNumber.fromInt(endfrom));
-			#line 55 "/my-component/src/englishauction/AuctionRepository.hx"
+			#line 57 "/my-component/src/englishauction/AuctionRepository.hx"
 			myargs2.push(global::maglev.MagLevNumber.fromInt(endto));
 			myargs2.push(global::maglev.MagLevNumber.fromInt(page));
-			#line 57 "/my-component/src/englishauction/AuctionRepository.hx"
+			#line 59 "/my-component/src/englishauction/AuctionRepository.hx"
 			myargs2.push(global::maglev.MagLevNumber.fromInt(perpage));
 			myargs2.push(global::maglev.MagLevString.fromString(sort));
-			#line 59 "/my-component/src/englishauction/AuctionRepository.hx"
+			#line 61 "/my-component/src/englishauction/AuctionRepository.hx"
 			myargs2.push(global::maglev.MagLevBoolean.fromBool(asc));
 			myargs.push(myargs2);
-			#line 61 "/my-component/src/englishauction/AuctionRepository.hx"
+			#line 63 "/my-component/src/englishauction/AuctionRepository.hx"
 			global::maglev.MagLevResult res = this.bus.call("Persistence.Get", myargs);
 			global::maglev.MagLevArray arr = ((global::maglev.MagLevArray) (res.getResult()) );
-			#line 63 "/my-component/src/englishauction/AuctionRepository.hx"
+			#line 65 "/my-component/src/englishauction/AuctionRepository.hx"
 			int i = 0;
 			while (( i < arr.size() )) {
-				#line 65 "/my-component/src/englishauction/AuctionRepository.hx"
+				#line 67 "/my-component/src/englishauction/AuctionRepository.hx"
 				global::englishauction.AuctionModel model = new global::englishauction.AuctionModel();
 				global::maglev.MagLevObject resobj = ((global::maglev.MagLevObject) (arr.@get(i)) );
-				#line 67 "/my-component/src/englishauction/AuctionRepository.hx"
+				#line 69 "/my-component/src/englishauction/AuctionRepository.hx"
 				model.id = (((global::maglev.MagLevString) (resobj.@get("auctionId")) )).getString();
 				model.start = (((global::maglev.MagLevNumber) (resobj.@get("start")) )).getInt();
-				#line 69 "/my-component/src/englishauction/AuctionRepository.hx"
+				#line 71 "/my-component/src/englishauction/AuctionRepository.hx"
 				model.end = (((global::maglev.MagLevNumber) (resobj.@get("end")) )).getInt();
 				model.startingPrice = (((global::maglev.MagLevNumber) (resobj.@get("startingPrice")) )).getFloat();
-				#line 71 "/my-component/src/englishauction/AuctionRepository.hx"
+				#line 73 "/my-component/src/englishauction/AuctionRepository.hx"
 				model.reservePrice = (((global::maglev.MagLevNumber) (resobj.@get("reservePrice")) )).getFloat();
 				model.priceIncrement = (((global::maglev.MagLevNumber) (resobj.@get("priceIncrement")) )).getFloat();
-				#line 73 "/my-component/src/englishauction/AuctionRepository.hx"
+				#line 75 "/my-component/src/englishauction/AuctionRepository.hx"
 				auctions.push(model);
 				 ++ i;
 			}
 			
-			#line 76 "/my-component/src/englishauction/AuctionRepository.hx"
+			#line 78 "/my-component/src/englishauction/AuctionRepository.hx"
+			return auctions;
+		}
+		#line default
+		
+		public virtual global::Array<object> FindAuctionsStarting(int startfrom, int startto, int page, int perpage, string sort, bool asc) {
+			#line 82 "/my-component/src/englishauction/AuctionRepository.hx"
+			global::Array<object> auctions = new global::Array<object>();
+			global::maglev.MagLevArray myargs = global::maglev.MagLevArray.create();
+			#line 84 "/my-component/src/englishauction/AuctionRepository.hx"
+			myargs.push(global::maglev.MagLevString.fromString("EnglishAuction.Auction"));
+			myargs.push(global::maglev.MagLevString.fromString("FindStarting"));
+			#line 86 "/my-component/src/englishauction/AuctionRepository.hx"
+			global::maglev.MagLevArray myargs2 = global::maglev.MagLevArray.create();
+			myargs2.push(global::maglev.MagLevNumber.fromInt(startfrom));
+			#line 88 "/my-component/src/englishauction/AuctionRepository.hx"
+			myargs2.push(global::maglev.MagLevNumber.fromInt(startto));
+			myargs2.push(global::maglev.MagLevNumber.fromInt(page));
+			#line 90 "/my-component/src/englishauction/AuctionRepository.hx"
+			myargs2.push(global::maglev.MagLevNumber.fromInt(perpage));
+			myargs2.push(global::maglev.MagLevString.fromString(sort));
+			#line 92 "/my-component/src/englishauction/AuctionRepository.hx"
+			myargs2.push(global::maglev.MagLevBoolean.fromBool(asc));
+			myargs.push(myargs2);
+			#line 94 "/my-component/src/englishauction/AuctionRepository.hx"
+			global::maglev.MagLevResult res = this.bus.call("Persistence.Get", myargs);
+			global::maglev.MagLevArray arr = ((global::maglev.MagLevArray) (res.getResult()) );
+			#line 96 "/my-component/src/englishauction/AuctionRepository.hx"
+			int i = 0;
+			while (( i < arr.size() )) {
+				#line 98 "/my-component/src/englishauction/AuctionRepository.hx"
+				global::englishauction.AuctionModel model = new global::englishauction.AuctionModel();
+				global::maglev.MagLevObject resobj = ((global::maglev.MagLevObject) (arr.@get(i)) );
+				#line 100 "/my-component/src/englishauction/AuctionRepository.hx"
+				model.id = (((global::maglev.MagLevString) (resobj.@get("auctionId")) )).getString();
+				model.start = (((global::maglev.MagLevNumber) (resobj.@get("start")) )).getInt();
+				#line 102 "/my-component/src/englishauction/AuctionRepository.hx"
+				model.end = (((global::maglev.MagLevNumber) (resobj.@get("end")) )).getInt();
+				model.startingPrice = (((global::maglev.MagLevNumber) (resobj.@get("startingPrice")) )).getFloat();
+				#line 104 "/my-component/src/englishauction/AuctionRepository.hx"
+				model.reservePrice = (((global::maglev.MagLevNumber) (resobj.@get("reservePrice")) )).getFloat();
+				model.priceIncrement = (((global::maglev.MagLevNumber) (resobj.@get("priceIncrement")) )).getFloat();
+				#line 106 "/my-component/src/englishauction/AuctionRepository.hx"
+				auctions.push(model);
+				 ++ i;
+			}
+			
+			#line 109 "/my-component/src/englishauction/AuctionRepository.hx"
+			return auctions;
+		}
+		#line default
+		
+		public virtual global::Array<object> FindOpenAuctions(int page, int perpage, string sort, bool asc) {
+			#line 113 "/my-component/src/englishauction/AuctionRepository.hx"
+			global::Array<object> auctions = new global::Array<object>();
+			global::maglev.MagLevArray myargs = global::maglev.MagLevArray.create();
+			#line 115 "/my-component/src/englishauction/AuctionRepository.hx"
+			myargs.push(global::maglev.MagLevString.fromString("EnglishAuction.Auction"));
+			myargs.push(global::maglev.MagLevString.fromString("FindOpen"));
+			#line 117 "/my-component/src/englishauction/AuctionRepository.hx"
+			global::maglev.MagLevArray myargs2 = global::maglev.MagLevArray.create();
+			myargs2.push(global::maglev.MagLevNumber.fromInt(page));
+			#line 119 "/my-component/src/englishauction/AuctionRepository.hx"
+			myargs2.push(global::maglev.MagLevNumber.fromInt(perpage));
+			myargs2.push(global::maglev.MagLevString.fromString(sort));
+			#line 121 "/my-component/src/englishauction/AuctionRepository.hx"
+			myargs2.push(global::maglev.MagLevBoolean.fromBool(asc));
+			myargs.push(myargs2);
+			#line 123 "/my-component/src/englishauction/AuctionRepository.hx"
+			global::maglev.MagLevResult res = this.bus.call("Persistence.Get", myargs);
+			global::maglev.MagLevArray arr = ((global::maglev.MagLevArray) (res.getResult()) );
+			#line 125 "/my-component/src/englishauction/AuctionRepository.hx"
+			int i = 0;
+			while (( i < arr.size() )) {
+				#line 127 "/my-component/src/englishauction/AuctionRepository.hx"
+				global::englishauction.AuctionModel model = new global::englishauction.AuctionModel();
+				global::maglev.MagLevObject resobj = ((global::maglev.MagLevObject) (arr.@get(i)) );
+				#line 129 "/my-component/src/englishauction/AuctionRepository.hx"
+				model.id = (((global::maglev.MagLevString) (resobj.@get("auctionId")) )).getString();
+				model.start = (((global::maglev.MagLevNumber) (resobj.@get("start")) )).getInt();
+				#line 131 "/my-component/src/englishauction/AuctionRepository.hx"
+				model.end = (((global::maglev.MagLevNumber) (resobj.@get("end")) )).getInt();
+				model.startingPrice = (((global::maglev.MagLevNumber) (resobj.@get("startingPrice")) )).getFloat();
+				#line 133 "/my-component/src/englishauction/AuctionRepository.hx"
+				model.reservePrice = (((global::maglev.MagLevNumber) (resobj.@get("reservePrice")) )).getFloat();
+				model.priceIncrement = (((global::maglev.MagLevNumber) (resobj.@get("priceIncrement")) )).getFloat();
+				#line 135 "/my-component/src/englishauction/AuctionRepository.hx"
+				auctions.push(model);
+				 ++ i;
+			}
+			
+			#line 138 "/my-component/src/englishauction/AuctionRepository.hx"
 			return auctions;
 		}
 		#line default
@@ -156,6 +250,20 @@ namespace englishauction {
 			unchecked {
 				#line 5 "/my-component/src/englishauction/AuctionRepository.hx"
 				switch (hash) {
+					case 1362300083:
+					{
+						#line 5 "/my-component/src/englishauction/AuctionRepository.hx"
+						return ((global::haxe.lang.Function) (new global::haxe.lang.Closure(this, "FindOpenAuctions", 1362300083)) );
+					}
+					
+					
+					case 89092393:
+					{
+						#line 5 "/my-component/src/englishauction/AuctionRepository.hx"
+						return ((global::haxe.lang.Function) (new global::haxe.lang.Closure(this, "FindAuctionsStarting", 89092393)) );
+					}
+					
+					
 					case 1833056016:
 					{
 						#line 5 "/my-component/src/englishauction/AuctionRepository.hx"
@@ -215,6 +323,20 @@ namespace englishauction {
 			unchecked {
 				#line 5 "/my-component/src/englishauction/AuctionRepository.hx"
 				switch (hash) {
+					case 1362300083:
+					{
+						#line 5 "/my-component/src/englishauction/AuctionRepository.hx"
+						return this.FindOpenAuctions(((int) (global::haxe.lang.Runtime.toInt(dynargs[0])) ), ((int) (global::haxe.lang.Runtime.toInt(dynargs[1])) ), global::haxe.lang.Runtime.toString(dynargs[2]), global::haxe.lang.Runtime.toBool(dynargs[3]));
+					}
+					
+					
+					case 89092393:
+					{
+						#line 5 "/my-component/src/englishauction/AuctionRepository.hx"
+						return this.FindAuctionsStarting(((int) (global::haxe.lang.Runtime.toInt(dynargs[0])) ), ((int) (global::haxe.lang.Runtime.toInt(dynargs[1])) ), ((int) (global::haxe.lang.Runtime.toInt(dynargs[2])) ), ((int) (global::haxe.lang.Runtime.toInt(dynargs[3])) ), global::haxe.lang.Runtime.toString(dynargs[4]), global::haxe.lang.Runtime.toBool(dynargs[5]));
+					}
+					
+					
 					case 1833056016:
 					{
 						#line 5 "/my-component/src/englishauction/AuctionRepository.hx"

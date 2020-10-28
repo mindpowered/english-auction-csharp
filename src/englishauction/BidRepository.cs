@@ -7,7 +7,7 @@ namespace englishauction {
 		static BidRepository() {
 			unchecked{
 				#line 5 "/my-component/src/englishauction/BidRepository.hx"
-				global::haxe.lang.FieldLookup.addFields(new int[]{3254785, 770176554, 958206052, 1542743820, 1835582091}, new string[]{"Add", "Edit", "Remove", "GetNumberOfBids", "FindById"});
+				global::haxe.lang.FieldLookup.addFields(new int[]{3254785, 770176554, 958206052, 1542743820, 1609038980, 1835582091}, new string[]{"Add", "Edit", "Remove", "GetNumberOfBids", "GetHighestBids", "FindById"});
 			}
 		}
 		#line default
@@ -69,6 +69,52 @@ namespace englishauction {
 		}
 		#line default
 		
+		public virtual global::Array<object> GetHighestBids(string auctionId, int numBids) {
+			#line 44 "/my-component/src/englishauction/BidRepository.hx"
+			global::maglev.MagLevArray myargs = global::maglev.MagLevArray.create();
+			myargs.push(global::maglev.MagLevString.fromString(auctionId));
+			#line 46 "/my-component/src/englishauction/BidRepository.hx"
+			myargs.push(global::maglev.MagLevNumber.fromInt(numBids));
+			global::maglev.MagLevArray myargs2 = global::maglev.MagLevArray.create();
+			#line 48 "/my-component/src/englishauction/BidRepository.hx"
+			myargs2.push(global::maglev.MagLevString.fromString("EnglishAuction.Bid"));
+			myargs2.push(global::maglev.MagLevString.fromString("FindByHighestPriceForAuction"));
+			#line 50 "/my-component/src/englishauction/BidRepository.hx"
+			myargs2.push(myargs);
+			global::maglev.MagLevResult res = this.bus.call("Persistence.Get", myargs2);
+			#line 52 "/my-component/src/englishauction/BidRepository.hx"
+			global::maglev.MagLevArray arr = ((global::maglev.MagLevArray) (res.getResult()) );
+			global::Array<object> bids = new global::Array<object>();
+			#line 54 "/my-component/src/englishauction/BidRepository.hx"
+			int i = 0;
+			while (( i < arr.size() )) {
+				#line 56 "/my-component/src/englishauction/BidRepository.hx"
+				global::englishauction.BidModel model = new global::englishauction.BidModel();
+				global::maglev.MagLevObject resobj = ((global::maglev.MagLevObject) (arr.@get(i)) );
+				#line 58 "/my-component/src/englishauction/BidRepository.hx"
+				model.id = (((global::maglev.MagLevString) (resobj.@get("bidId")) )).getString();
+				if (resobj.exists("auctionId")) {
+					#line 60 "/my-component/src/englishauction/BidRepository.hx"
+					model.auctionId = (((global::maglev.MagLevString) (resobj.@get("auctionId")) )).getString();
+				}
+				else {
+					#line 62 "/my-component/src/englishauction/BidRepository.hx"
+					model.auctionId = auctionId;
+				}
+				
+				#line 64 "/my-component/src/englishauction/BidRepository.hx"
+				model.userId = (((global::maglev.MagLevString) (resobj.@get("userId")) )).getString();
+				model.amount = (((global::maglev.MagLevNumber) (resobj.@get("price")) )).getFloat();
+				#line 66 "/my-component/src/englishauction/BidRepository.hx"
+				bids.push(model);
+				 ++ i;
+			}
+			
+			#line 69 "/my-component/src/englishauction/BidRepository.hx"
+			return bids;
+		}
+		#line default
+		
 		public override object __hx_setField(string field, int hash, object @value, bool handleProperties) {
 			unchecked {
 				#line 5 "/my-component/src/englishauction/BidRepository.hx"
@@ -99,6 +145,13 @@ namespace englishauction {
 			unchecked {
 				#line 5 "/my-component/src/englishauction/BidRepository.hx"
 				switch (hash) {
+					case 1609038980:
+					{
+						#line 5 "/my-component/src/englishauction/BidRepository.hx"
+						return ((global::haxe.lang.Function) (new global::haxe.lang.Closure(this, "GetHighestBids", 1609038980)) );
+					}
+					
+					
 					case 1542743820:
 					{
 						#line 5 "/my-component/src/englishauction/BidRepository.hx"
@@ -158,6 +211,13 @@ namespace englishauction {
 			unchecked {
 				#line 5 "/my-component/src/englishauction/BidRepository.hx"
 				switch (hash) {
+					case 1609038980:
+					{
+						#line 5 "/my-component/src/englishauction/BidRepository.hx"
+						return this.GetHighestBids(global::haxe.lang.Runtime.toString(dynargs[0]), ((int) (global::haxe.lang.Runtime.toInt(dynargs[1])) ));
+					}
+					
+					
 					case 1542743820:
 					{
 						#line 5 "/my-component/src/englishauction/BidRepository.hx"
