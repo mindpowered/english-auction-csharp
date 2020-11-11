@@ -54,63 +54,66 @@ namespace englishauction {
 			pargs.push(global::maglev.MagLevString.fromString("EnglishAuction.Bid"));
 			#line 33 "/my-component/src/englishauction/BidRepository.hx"
 			pargs.push(global::maglev.MagLevString.fromString("CountForAuction"));
-			pargs.push(global::maglev.MagLevString.fromString(auctionId));
+			global::maglev.MagLevArray parr = global::maglev.MagLevArray.create();
 			#line 35 "/my-component/src/englishauction/BidRepository.hx"
+			parr.push(global::maglev.MagLevString.fromString(auctionId));
+			pargs.push(parr);
+			#line 37 "/my-component/src/englishauction/BidRepository.hx"
 			global::maglev.MagLevResult ret = this.bus.call("Persistence.Get", pargs);
 			int count = 0;
-			#line 37 "/my-component/src/englishauction/BidRepository.hx"
+			#line 39 "/my-component/src/englishauction/BidRepository.hx"
 			if ( ! (ret.isError()) ) {
-				#line 38 "/my-component/src/englishauction/BidRepository.hx"
+				#line 40 "/my-component/src/englishauction/BidRepository.hx"
 				count = (((global::maglev.MagLevNumber) (ret.getResult()) )).getInt();
 			}
 			
-			#line 40 "/my-component/src/englishauction/BidRepository.hx"
+			#line 42 "/my-component/src/englishauction/BidRepository.hx"
 			return count;
 		}
 		#line default
 		
 		public virtual global::Array<object> GetHighestBids(string auctionId, int numBids) {
-			#line 44 "/my-component/src/englishauction/BidRepository.hx"
+			#line 46 "/my-component/src/englishauction/BidRepository.hx"
 			global::maglev.MagLevArray myargs = global::maglev.MagLevArray.create();
 			myargs.push(global::maglev.MagLevString.fromString(auctionId));
-			#line 46 "/my-component/src/englishauction/BidRepository.hx"
+			#line 48 "/my-component/src/englishauction/BidRepository.hx"
 			myargs.push(global::maglev.MagLevNumber.fromInt(numBids));
 			global::maglev.MagLevArray myargs2 = global::maglev.MagLevArray.create();
-			#line 48 "/my-component/src/englishauction/BidRepository.hx"
+			#line 50 "/my-component/src/englishauction/BidRepository.hx"
 			myargs2.push(global::maglev.MagLevString.fromString("EnglishAuction.Bid"));
 			myargs2.push(global::maglev.MagLevString.fromString("FindByHighestPriceForAuction"));
-			#line 50 "/my-component/src/englishauction/BidRepository.hx"
+			#line 52 "/my-component/src/englishauction/BidRepository.hx"
 			myargs2.push(myargs);
 			global::maglev.MagLevResult res = this.bus.call("Persistence.Get", myargs2);
-			#line 52 "/my-component/src/englishauction/BidRepository.hx"
+			#line 54 "/my-component/src/englishauction/BidRepository.hx"
 			global::maglev.MagLevArray arr = ((global::maglev.MagLevArray) (res.getResult()) );
 			global::Array<object> bids = new global::Array<object>();
-			#line 54 "/my-component/src/englishauction/BidRepository.hx"
+			#line 56 "/my-component/src/englishauction/BidRepository.hx"
 			int i = 0;
 			while (( i < arr.size() )) {
-				#line 56 "/my-component/src/englishauction/BidRepository.hx"
+				#line 58 "/my-component/src/englishauction/BidRepository.hx"
 				global::englishauction.BidModel model = new global::englishauction.BidModel();
 				global::maglev.MagLevObject resobj = ((global::maglev.MagLevObject) (arr.@get(i)) );
-				#line 58 "/my-component/src/englishauction/BidRepository.hx"
+				#line 60 "/my-component/src/englishauction/BidRepository.hx"
 				model.id = (((global::maglev.MagLevString) (resobj.@get("bidId")) )).getString();
 				if (resobj.exists("auctionId")) {
-					#line 60 "/my-component/src/englishauction/BidRepository.hx"
+					#line 62 "/my-component/src/englishauction/BidRepository.hx"
 					model.auctionId = (((global::maglev.MagLevString) (resobj.@get("auctionId")) )).getString();
 				}
 				else {
-					#line 62 "/my-component/src/englishauction/BidRepository.hx"
+					#line 64 "/my-component/src/englishauction/BidRepository.hx"
 					model.auctionId = auctionId;
 				}
 				
-				#line 64 "/my-component/src/englishauction/BidRepository.hx"
+				#line 66 "/my-component/src/englishauction/BidRepository.hx"
 				model.userId = (((global::maglev.MagLevString) (resobj.@get("userId")) )).getString();
 				model.amount = (((global::maglev.MagLevNumber) (resobj.@get("price")) )).getFloat();
-				#line 66 "/my-component/src/englishauction/BidRepository.hx"
+				#line 68 "/my-component/src/englishauction/BidRepository.hx"
 				bids.push(model);
 				 ++ i;
 			}
 			
-			#line 69 "/my-component/src/englishauction/BidRepository.hx"
+			#line 71 "/my-component/src/englishauction/BidRepository.hx"
 			return bids;
 		}
 		#line default
