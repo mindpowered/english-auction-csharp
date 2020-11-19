@@ -70,6 +70,19 @@ namespace wrappers {
 		}
 
 		/**
+		 * Check if an auction has ended yet
+		 * @param auctionId auction id
+		 * @return {number} The x value.
+		*/
+		HasEnded(auctionId)
+		{
+			//TODO: C# let bus = maglev.maglev.MagLev.getInstance('englishauction');
+			//TODO: C# let args = [auctionId];
+			//TODO: C# let ret = bus.call('EnglishAuction.HasEnded', args);
+			//TODO: C# return ret;
+		}
+
+		/**
 		 * Create a bid in an auction
 		 * @param auctionId auction id
 		 * @param userId user id
