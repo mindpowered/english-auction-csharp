@@ -30,9 +30,29 @@ namespace englishauction {
 		
 		public global::maglev.MagLev bus;
 		
-		public virtual void Add(global::englishauction.BidModel bid) {
+		public virtual void Add(global::englishauction.BidModel bid, global::haxe.lang.Function callback) {
+			#line 14 "/my-component/src/englishauction/BidRepository.hx"
+			global::maglev.MagLevObject data = global::maglev.MagLevObject.create();
+			data.@set("auctionId", global::maglev.MagLevString.fromString(bid.auctionId));
+			#line 16 "/my-component/src/englishauction/BidRepository.hx"
+			data.@set("userId", global::maglev.MagLevString.fromString(bid.userId));
+			data.@set("price", global::maglev.MagLevNumber.fromFloat(bid.price));
+			#line 18 "/my-component/src/englishauction/BidRepository.hx"
+			global::maglev.MagLevArray args = global::maglev.MagLevArray.create();
+			args.push(global::maglev.MagLevString.fromString("EnglishAuction.Bid"));
+			#line 20 "/my-component/src/englishauction/BidRepository.hx"
+			args.push(global::maglev.MagLevString.fromString("New"));
+			global::maglev.MagLevArray arr = global::maglev.MagLevArray.create();
+			#line 22 "/my-component/src/englishauction/BidRepository.hx"
+			arr.push(data);
+			args.push(arr);
+			#line 24 "/my-component/src/englishauction/BidRepository.hx"
+			global::maglev.MagLevResult res = this.bus.call("Persistence.Mutate", args);
+			res.onResult(new global::englishauction.BidRepository_Add_25__Fun(callback));
+			#line 29 "/my-component/src/englishauction/BidRepository.hx"
+			res.onError(( (( global::englishauction.BidRepository_Add_29__Fun.__hx_current != null )) ? (global::englishauction.BidRepository_Add_29__Fun.__hx_current) : (global::englishauction.BidRepository_Add_29__Fun.__hx_current = ((global::englishauction.BidRepository_Add_29__Fun) (new global::englishauction.BidRepository_Add_29__Fun()) )) ));
 		}
-		
+		#line default
 		
 		public virtual void Edit(global::englishauction.BidModel bid) {
 		}
@@ -43,78 +63,48 @@ namespace englishauction {
 		
 		
 		public virtual global::englishauction.BidModel FindById(string bidId) {
-			#line 27 "/my-component/src/englishauction/BidRepository.hx"
+			#line 44 "/my-component/src/englishauction/BidRepository.hx"
 			return null;
 		}
 		#line default
 		
-		public virtual int GetNumberOfBids(string auctionId) {
-			#line 31 "/my-component/src/englishauction/BidRepository.hx"
+		public virtual void GetNumberOfBids(string auctionId, global::haxe.lang.Function callback) {
+			#line 48 "/my-component/src/englishauction/BidRepository.hx"
 			global::maglev.MagLevArray pargs = global::maglev.MagLevArray.create();
 			pargs.push(global::maglev.MagLevString.fromString("EnglishAuction.Bid"));
-			#line 33 "/my-component/src/englishauction/BidRepository.hx"
+			#line 50 "/my-component/src/englishauction/BidRepository.hx"
 			pargs.push(global::maglev.MagLevString.fromString("CountForAuction"));
 			global::maglev.MagLevArray parr = global::maglev.MagLevArray.create();
-			#line 35 "/my-component/src/englishauction/BidRepository.hx"
+			#line 52 "/my-component/src/englishauction/BidRepository.hx"
 			parr.push(global::maglev.MagLevString.fromString(auctionId));
 			pargs.push(parr);
-			#line 37 "/my-component/src/englishauction/BidRepository.hx"
+			#line 54 "/my-component/src/englishauction/BidRepository.hx"
 			global::maglev.MagLevResult ret = this.bus.call("Persistence.Get", pargs);
 			int count = 0;
-			#line 39 "/my-component/src/englishauction/BidRepository.hx"
-			if ( ! (ret.isError()) ) {
-				#line 40 "/my-component/src/englishauction/BidRepository.hx"
-				count = (((global::maglev.MagLevNumber) (ret.getResult()) )).getInt();
-			}
-			
-			#line 42 "/my-component/src/englishauction/BidRepository.hx"
-			return count;
+			#line 56 "/my-component/src/englishauction/BidRepository.hx"
+			ret.onResult(new global::englishauction.BidRepository_GetNumberOfBids_56__Fun(callback));
+			#line 60 "/my-component/src/englishauction/BidRepository.hx"
+			ret.onError(( (( global::englishauction.BidRepository_GetNumberOfBids_60__Fun.__hx_current != null )) ? (global::englishauction.BidRepository_GetNumberOfBids_60__Fun.__hx_current) : (global::englishauction.BidRepository_GetNumberOfBids_60__Fun.__hx_current = ((global::englishauction.BidRepository_GetNumberOfBids_60__Fun) (new global::englishauction.BidRepository_GetNumberOfBids_60__Fun()) )) ));
 		}
 		#line default
 		
-		public virtual global::Array<object> GetHighestBids(string auctionId, int numBids) {
-			#line 46 "/my-component/src/englishauction/BidRepository.hx"
+		public virtual void GetHighestBids(string auctionId, int numBids, global::haxe.lang.Function callback) {
+			#line 66 "/my-component/src/englishauction/BidRepository.hx"
 			global::maglev.MagLevArray myargs = global::maglev.MagLevArray.create();
 			myargs.push(global::maglev.MagLevString.fromString(auctionId));
-			#line 48 "/my-component/src/englishauction/BidRepository.hx"
+			#line 68 "/my-component/src/englishauction/BidRepository.hx"
 			myargs.push(global::maglev.MagLevNumber.fromInt(numBids));
 			global::maglev.MagLevArray myargs2 = global::maglev.MagLevArray.create();
-			#line 50 "/my-component/src/englishauction/BidRepository.hx"
+			#line 70 "/my-component/src/englishauction/BidRepository.hx"
 			myargs2.push(global::maglev.MagLevString.fromString("EnglishAuction.Bid"));
 			myargs2.push(global::maglev.MagLevString.fromString("FindByHighestPriceForAuction"));
-			#line 52 "/my-component/src/englishauction/BidRepository.hx"
+			#line 72 "/my-component/src/englishauction/BidRepository.hx"
 			myargs2.push(myargs);
 			global::maglev.MagLevResult res = this.bus.call("Persistence.Get", myargs2);
-			#line 54 "/my-component/src/englishauction/BidRepository.hx"
-			global::maglev.MagLevArray arr = ((global::maglev.MagLevArray) (res.getResult()) );
-			global::Array<object> bids = new global::Array<object>();
-			#line 56 "/my-component/src/englishauction/BidRepository.hx"
-			int i = 0;
-			while (( i < arr.size() )) {
-				#line 58 "/my-component/src/englishauction/BidRepository.hx"
-				global::englishauction.BidModel model = new global::englishauction.BidModel();
-				global::maglev.MagLevObject resobj = ((global::maglev.MagLevObject) (arr.@get(i)) );
-				#line 60 "/my-component/src/englishauction/BidRepository.hx"
-				model.id = (((global::maglev.MagLevString) (resobj.@get("bidId")) )).getString();
-				if (resobj.exists("auctionId")) {
-					#line 62 "/my-component/src/englishauction/BidRepository.hx"
-					model.auctionId = (((global::maglev.MagLevString) (resobj.@get("auctionId")) )).getString();
-				}
-				else {
-					#line 64 "/my-component/src/englishauction/BidRepository.hx"
-					model.auctionId = auctionId;
-				}
-				
-				#line 66 "/my-component/src/englishauction/BidRepository.hx"
-				model.userId = (((global::maglev.MagLevString) (resobj.@get("userId")) )).getString();
-				model.amount = (((global::maglev.MagLevNumber) (resobj.@get("price")) )).getFloat();
-				#line 68 "/my-component/src/englishauction/BidRepository.hx"
-				bids.push(model);
-				 ++ i;
-			}
-			
-			#line 71 "/my-component/src/englishauction/BidRepository.hx"
-			return bids;
+			#line 74 "/my-component/src/englishauction/BidRepository.hx"
+			res.onError(( (( global::englishauction.BidRepository_GetHighestBids_74__Fun.__hx_current != null )) ? (global::englishauction.BidRepository_GetHighestBids_74__Fun.__hx_current) : (global::englishauction.BidRepository_GetHighestBids_74__Fun.__hx_current = ((global::englishauction.BidRepository_GetHighestBids_74__Fun) (new global::englishauction.BidRepository_GetHighestBids_74__Fun()) )) ));
+			#line 77 "/my-component/src/englishauction/BidRepository.hx"
+			res.onResult(new global::englishauction.BidRepository_GetHighestBids_77__Fun(callback, auctionId));
 		}
 		#line default
 		
@@ -217,14 +207,18 @@ namespace englishauction {
 					case 1609038980:
 					{
 						#line 5 "/my-component/src/englishauction/BidRepository.hx"
-						return this.GetHighestBids(global::haxe.lang.Runtime.toString(dynargs[0]), ((int) (global::haxe.lang.Runtime.toInt(dynargs[1])) ));
+						this.GetHighestBids(global::haxe.lang.Runtime.toString(dynargs[0]), ((int) (global::haxe.lang.Runtime.toInt(dynargs[1])) ), ((global::haxe.lang.Function) (dynargs[2]) ));
+						#line 5 "/my-component/src/englishauction/BidRepository.hx"
+						break;
 					}
 					
 					
 					case 1542743820:
 					{
 						#line 5 "/my-component/src/englishauction/BidRepository.hx"
-						return this.GetNumberOfBids(global::haxe.lang.Runtime.toString(dynargs[0]));
+						this.GetNumberOfBids(global::haxe.lang.Runtime.toString(dynargs[0]), ((global::haxe.lang.Function) (dynargs[1]) ));
+						#line 5 "/my-component/src/englishauction/BidRepository.hx"
+						break;
 					}
 					
 					
@@ -256,7 +250,7 @@ namespace englishauction {
 					case 3254785:
 					{
 						#line 5 "/my-component/src/englishauction/BidRepository.hx"
-						this.Add(((global::englishauction.BidModel) (dynargs[0]) ));
+						this.Add(((global::englishauction.BidModel) (dynargs[0]) ), ((global::haxe.lang.Function) (dynargs[1]) ));
 						#line 5 "/my-component/src/englishauction/BidRepository.hx"
 						break;
 					}
@@ -284,6 +278,182 @@ namespace englishauction {
 			base.__hx_getFields(baseArr);
 		}
 		#line default
+		
+	}
+}
+
+
+
+#pragma warning disable 109, 114, 219, 429, 168, 162
+namespace englishauction {
+	public class BidRepository_Add_25__Fun : global::haxe.lang.Function {
+		
+		public BidRepository_Add_25__Fun(global::haxe.lang.Function callback) : base(1, 0) {
+			#line 25 "/my-component/src/englishauction/BidRepository.hx"
+			this.callback = callback;
+		}
+		#line default
+		
+		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
+			#line 25 "/my-component/src/englishauction/BidRepository.hx"
+			global::maglev.MagLevAny ret = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevAny) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevAny) (__fn_dyn1) )) );
+			this.callback.__hx_invoke1_o(default(double), (((global::maglev.MagLevString) (ret) )).getString());
+			#line 27 "/my-component/src/englishauction/BidRepository.hx"
+			return global::maglev.MagLevResult.fromResult(global::maglev.MagLevNull.create());
+		}
+		#line default
+		
+		public global::haxe.lang.Function callback;
+		
+	}
+}
+
+
+
+#pragma warning disable 109, 114, 219, 429, 168, 162
+namespace englishauction {
+	public class BidRepository_Add_29__Fun : global::haxe.lang.Function {
+		
+		public BidRepository_Add_29__Fun() : base(1, 0) {
+		}
+		
+		
+		public static global::englishauction.BidRepository_Add_29__Fun __hx_current;
+		
+		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
+			#line 29 "/my-component/src/englishauction/BidRepository.hx"
+			global::maglev.MagLevError err = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevError) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevError) (__fn_dyn1) )) );
+			throw ((global::System.Exception) (global::haxe.Exception.thrown(err.getMessage())) );
+		}
+		#line default
+		
+	}
+}
+
+
+
+#pragma warning disable 109, 114, 219, 429, 168, 162
+namespace englishauction {
+	public class BidRepository_GetNumberOfBids_56__Fun : global::haxe.lang.Function {
+		
+		public BidRepository_GetNumberOfBids_56__Fun(global::haxe.lang.Function callback) : base(1, 0) {
+			#line 56 "/my-component/src/englishauction/BidRepository.hx"
+			this.callback = callback;
+		}
+		#line default
+		
+		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
+			#line 56 "/my-component/src/englishauction/BidRepository.hx"
+			global::maglev.MagLevAny result = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevAny) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevAny) (__fn_dyn1) )) );
+			this.callback.__hx_invoke1_o(((double) ((((global::maglev.MagLevNumber) (result) )).getInt()) ), global::haxe.lang.Runtime.undefined);
+			#line 58 "/my-component/src/englishauction/BidRepository.hx"
+			return global::maglev.MagLevResult.fromResult(global::maglev.MagLevNull.create());
+		}
+		#line default
+		
+		public global::haxe.lang.Function callback;
+		
+	}
+}
+
+
+
+#pragma warning disable 109, 114, 219, 429, 168, 162
+namespace englishauction {
+	public class BidRepository_GetNumberOfBids_60__Fun : global::haxe.lang.Function {
+		
+		public BidRepository_GetNumberOfBids_60__Fun() : base(1, 0) {
+		}
+		
+		
+		public static global::englishauction.BidRepository_GetNumberOfBids_60__Fun __hx_current;
+		
+		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
+			#line 60 "/my-component/src/englishauction/BidRepository.hx"
+			global::maglev.MagLevError error = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevError) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevError) (__fn_dyn1) )) );
+			throw ((global::System.Exception) (global::haxe.Exception.thrown(error.getMessage())) );
+		}
+		#line default
+		
+	}
+}
+
+
+
+#pragma warning disable 109, 114, 219, 429, 168, 162
+namespace englishauction {
+	public class BidRepository_GetHighestBids_74__Fun : global::haxe.lang.Function {
+		
+		public BidRepository_GetHighestBids_74__Fun() : base(1, 0) {
+		}
+		
+		
+		public static global::englishauction.BidRepository_GetHighestBids_74__Fun __hx_current;
+		
+		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
+			#line 74 "/my-component/src/englishauction/BidRepository.hx"
+			global::maglev.MagLevError error = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevError) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevError) (__fn_dyn1) )) );
+			throw ((global::System.Exception) (global::haxe.Exception.thrown(error.getMessage())) );
+		}
+		#line default
+		
+	}
+}
+
+
+
+#pragma warning disable 109, 114, 219, 429, 168, 162
+namespace englishauction {
+	public class BidRepository_GetHighestBids_77__Fun : global::haxe.lang.Function {
+		
+		public BidRepository_GetHighestBids_77__Fun(global::haxe.lang.Function callback, string auctionId) : base(1, 0) {
+			#line 77 "/my-component/src/englishauction/BidRepository.hx"
+			this.callback = callback;
+			#line 77 "/my-component/src/englishauction/BidRepository.hx"
+			this.auctionId = auctionId;
+		}
+		#line default
+		
+		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
+			#line 77 "/my-component/src/englishauction/BidRepository.hx"
+			global::maglev.MagLevAny onres = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevAny) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevAny) (__fn_dyn1) )) );
+			global::maglev.MagLevArray arr = ((global::maglev.MagLevArray) (onres) );
+			#line 79 "/my-component/src/englishauction/BidRepository.hx"
+			global::Array<object> bids = new global::Array<object>();
+			int i = 0;
+			#line 81 "/my-component/src/englishauction/BidRepository.hx"
+			while (( i < arr.size() )) {
+				#line 82 "/my-component/src/englishauction/BidRepository.hx"
+				global::englishauction.BidModel model = new global::englishauction.BidModel();
+				global::maglev.MagLevObject resobj = ((global::maglev.MagLevObject) (arr.@get(i)) );
+				#line 84 "/my-component/src/englishauction/BidRepository.hx"
+				model.id = (((global::maglev.MagLevString) (resobj.@get("bidId")) )).getString();
+				if (resobj.exists("auctionId")) {
+					#line 86 "/my-component/src/englishauction/BidRepository.hx"
+					model.auctionId = (((global::maglev.MagLevString) (resobj.@get("auctionId")) )).getString();
+				}
+				else {
+					#line 88 "/my-component/src/englishauction/BidRepository.hx"
+					model.auctionId = this.auctionId;
+				}
+				
+				#line 90 "/my-component/src/englishauction/BidRepository.hx"
+				model.userId = (((global::maglev.MagLevString) (resobj.@get("userId")) )).getString();
+				model.price = (((global::maglev.MagLevNumber) (resobj.@get("price")) )).getFloat();
+				#line 92 "/my-component/src/englishauction/BidRepository.hx"
+				bids.push(model);
+				 ++ i;
+			}
+			
+			#line 95 "/my-component/src/englishauction/BidRepository.hx"
+			this.callback.__hx_invoke1_o(default(double), bids);
+			return global::maglev.MagLevResult.fromResult(global::maglev.MagLevNull.create());
+		}
+		#line default
+		
+		public global::haxe.lang.Function callback;
+		
+		public string auctionId;
 		
 	}
 }

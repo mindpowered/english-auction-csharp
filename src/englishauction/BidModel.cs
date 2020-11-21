@@ -24,16 +24,16 @@ namespace englishauction {
 		
 		public string userId;
 		
-		public double amount;
+		public double price;
 		
 		public override double __hx_setField_f(string field, int hash, double @value, bool handleProperties) {
 			unchecked {
 				#line 3 "/my-component/src/englishauction/BidModel.hx"
 				switch (hash) {
-					case 1426264536:
+					case 1217089161:
 					{
 						#line 3 "/my-component/src/englishauction/BidModel.hx"
-						this.amount = ((double) (@value) );
+						this.price = ((double) (@value) );
 						#line 3 "/my-component/src/englishauction/BidModel.hx"
 						return @value;
 					}
@@ -56,10 +56,10 @@ namespace englishauction {
 			unchecked {
 				#line 3 "/my-component/src/englishauction/BidModel.hx"
 				switch (hash) {
-					case 1426264536:
+					case 1217089161:
 					{
 						#line 3 "/my-component/src/englishauction/BidModel.hx"
-						this.amount = ((double) (global::haxe.lang.Runtime.toDouble(@value)) );
+						this.price = ((double) (global::haxe.lang.Runtime.toDouble(@value)) );
 						#line 3 "/my-component/src/englishauction/BidModel.hx"
 						return @value;
 					}
@@ -109,10 +109,10 @@ namespace englishauction {
 			unchecked {
 				#line 3 "/my-component/src/englishauction/BidModel.hx"
 				switch (hash) {
-					case 1426264536:
+					case 1217089161:
 					{
 						#line 3 "/my-component/src/englishauction/BidModel.hx"
-						return this.amount;
+						return this.price;
 					}
 					
 					
@@ -154,10 +154,10 @@ namespace englishauction {
 			unchecked {
 				#line 3 "/my-component/src/englishauction/BidModel.hx"
 				switch (hash) {
-					case 1426264536:
+					case 1217089161:
 					{
 						#line 3 "/my-component/src/englishauction/BidModel.hx"
-						return this.amount;
+						return this.price;
 					}
 					
 					
@@ -176,7 +176,7 @@ namespace englishauction {
 		
 		public override void __hx_getFields(global::Array<string> baseArr) {
 			#line 3 "/my-component/src/englishauction/BidModel.hx"
-			baseArr.push("amount");
+			baseArr.push("price");
 			#line 3 "/my-component/src/englishauction/BidModel.hx"
 			baseArr.push("userId");
 			#line 3 "/my-component/src/englishauction/BidModel.hx"
