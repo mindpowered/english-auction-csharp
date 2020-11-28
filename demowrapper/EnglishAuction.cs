@@ -23,7 +23,7 @@ namespace wrappers {
 		*/
 		Create(start, end, startingPrice, reservePrice, priceIncrement)
 		{
-			//TODO: C# let bus = maglev.maglev.MagLev.getInstance('englishauction');
+			//TODO: C# let bus = maglev.maglev.MagLev.getInstance('default');
 			//TODO: C# let args = [start, end, startingPrice, reservePrice, priceIncrement];
 			//TODO: C# let ret = bus.call('EnglishAuction.Create', args);
 			//TODO: C# return ret;
@@ -37,7 +37,7 @@ namespace wrappers {
 		*/
 		GetStart(auctionId)
 		{
-			//TODO: C# let bus = maglev.maglev.MagLev.getInstance('englishauction');
+			//TODO: C# let bus = maglev.maglev.MagLev.getInstance('default');
 			//TODO: C# let args = [auctionId];
 			//TODO: C# let ret = bus.call('EnglishAuction.GetStart', args);
 			//TODO: C# return ret;
@@ -50,7 +50,7 @@ namespace wrappers {
 		*/
 		GetEnd(auctionId)
 		{
-			//TODO: C# let bus = maglev.maglev.MagLev.getInstance('englishauction');
+			//TODO: C# let bus = maglev.maglev.MagLev.getInstance('default');
 			//TODO: C# let args = [auctionId];
 			//TODO: C# let ret = bus.call('EnglishAuction.GetEnd', args);
 			//TODO: C# return ret;
@@ -63,7 +63,7 @@ namespace wrappers {
 		*/
 		HasStarted(auctionId)
 		{
-			//TODO: C# let bus = maglev.maglev.MagLev.getInstance('englishauction');
+			//TODO: C# let bus = maglev.maglev.MagLev.getInstance('default');
 			//TODO: C# let args = [auctionId];
 			//TODO: C# let ret = bus.call('EnglishAuction.HasStarted', args);
 			//TODO: C# return ret;
@@ -76,7 +76,7 @@ namespace wrappers {
 		*/
 		HasEnded(auctionId)
 		{
-			//TODO: C# let bus = maglev.maglev.MagLev.getInstance('englishauction');
+			//TODO: C# let bus = maglev.maglev.MagLev.getInstance('default');
 			//TODO: C# let args = [auctionId];
 			//TODO: C# let ret = bus.call('EnglishAuction.HasEnded', args);
 			//TODO: C# return ret;
@@ -90,7 +90,7 @@ namespace wrappers {
 		*/
 		Bid(auctionId, userId, price)
 		{
-			//TODO: C# let bus = maglev.maglev.MagLev.getInstance('englishauction');
+			//TODO: C# let bus = maglev.maglev.MagLev.getInstance('default');
 			//TODO: C# let args = [auctionId, userId, price];
 			//TODO: bus.call('EnglishAuction.Bid', args);
 		}
@@ -102,7 +102,7 @@ namespace wrappers {
 		*/
 		GetHighestBidder(auctionId)
 		{
-			//TODO: C# let bus = maglev.maglev.MagLev.getInstance('englishauction');
+			//TODO: C# let bus = maglev.maglev.MagLev.getInstance('default');
 			//TODO: C# let args = [auctionId];
 			//TODO: C# let ret = bus.call('EnglishAuction.GetHighestBidder', args);
 			//TODO: C# return ret;
@@ -116,7 +116,7 @@ namespace wrappers {
 		*/
 		GetHighestBids(auctionId, numBids)
 		{
-			//TODO: C# let bus = maglev.maglev.MagLev.getInstance('englishauction');
+			//TODO: C# let bus = maglev.maglev.MagLev.getInstance('default');
 			//TODO: C# let args = [auctionId, numBids];
 			//TODO: C# let ret = bus.call('EnglishAuction.GetHighestBids', args);
 			//TODO: C# return ret;
@@ -129,7 +129,7 @@ namespace wrappers {
 		*/
 		GetNumberOfBids(auctionId)
 		{
-			//TODO: C# let bus = maglev.maglev.MagLev.getInstance('englishauction');
+			//TODO: C# let bus = maglev.maglev.MagLev.getInstance('default');
 			//TODO: C# let args = [auctionId];
 			//TODO: C# let ret = bus.call('EnglishAuction.GetNumberOfBids', args);
 			//TODO: C# return ret;
@@ -142,7 +142,7 @@ namespace wrappers {
 		*/
 		GetPriceIncrement(auctionId)
 		{
-			//TODO: C# let bus = maglev.maglev.MagLev.getInstance('englishauction');
+			//TODO: C# let bus = maglev.maglev.MagLev.getInstance('default');
 			//TODO: C# let args = [auctionId];
 			//TODO: C# let ret = bus.call('EnglishAuction.GetPriceIncrement', args);
 			//TODO: C# return ret;
@@ -155,7 +155,7 @@ namespace wrappers {
 		*/
 		GetReservePrice(auctionId)
 		{
-			//TODO: C# let bus = maglev.maglev.MagLev.getInstance('englishauction');
+			//TODO: C# let bus = maglev.maglev.MagLev.getInstance('default');
 			//TODO: C# let args = [auctionId];
 			//TODO: C# let ret = bus.call('EnglishAuction.GetReservePrice', args);
 			//TODO: C# return ret;
@@ -168,7 +168,7 @@ namespace wrappers {
 		*/
 		GetStartingPrice(auctionId)
 		{
-			//TODO: C# let bus = maglev.maglev.MagLev.getInstance('englishauction');
+			//TODO: C# let bus = maglev.maglev.MagLev.getInstance('default');
 			//TODO: C# let args = [auctionId];
 			//TODO: C# let ret = bus.call('EnglishAuction.GetStartingPrice', args);
 			//TODO: C# return ret;
@@ -182,7 +182,7 @@ namespace wrappers {
 		*/
 		CalcTimeRemaining(auctionId, now)
 		{
-			//TODO: C# let bus = maglev.maglev.MagLev.getInstance('englishauction');
+			//TODO: C# let bus = maglev.maglev.MagLev.getInstance('default');
 			//TODO: C# let args = [auctionId, now];
 			//TODO: C# let ret = bus.call('EnglishAuction.CalcTimeRemaining', args);
 			//TODO: C# return ret;
@@ -195,7 +195,7 @@ namespace wrappers {
 		*/
 		CalcMinimumBid(auctionId)
 		{
-			//TODO: C# let bus = maglev.maglev.MagLev.getInstance('englishauction');
+			//TODO: C# let bus = maglev.maglev.MagLev.getInstance('default');
 			//TODO: C# let args = [auctionId];
 			//TODO: C# let ret = bus.call('EnglishAuction.CalcMinimumBid', args);
 			//TODO: C# return ret;
@@ -213,7 +213,7 @@ namespace wrappers {
 		*/
 		GetAuctionsEnding(endfrom, endto, page, perpage, sort, asc)
 		{
-			//TODO: C# let bus = maglev.maglev.MagLev.getInstance('englishauction');
+			//TODO: C# let bus = maglev.maglev.MagLev.getInstance('default');
 			//TODO: C# let args = [endfrom, endto, page, perpage, sort, asc];
 			//TODO: C# let ret = bus.call('EnglishAuction.GetAuctionsEnding', args);
 			//TODO: C# return ret;
@@ -231,7 +231,7 @@ namespace wrappers {
 		*/
 		GetAuctionsStarting(startfrom, startto, page, perpage, sort, asc)
 		{
-			//TODO: C# let bus = maglev.maglev.MagLev.getInstance('englishauction');
+			//TODO: C# let bus = maglev.maglev.MagLev.getInstance('default');
 			//TODO: C# let args = [startfrom, startto, page, perpage, sort, asc];
 			//TODO: C# let ret = bus.call('EnglishAuction.GetAuctionsStarting', args);
 			//TODO: C# return ret;
@@ -247,7 +247,7 @@ namespace wrappers {
 		*/
 		GetOpenAuctions(page, perpage, sort, asc)
 		{
-			//TODO: C# let bus = maglev.maglev.MagLev.getInstance('englishauction');
+			//TODO: C# let bus = maglev.maglev.MagLev.getInstance('default');
 			//TODO: C# let args = [page, perpage, sort, asc];
 			//TODO: C# let ret = bus.call('EnglishAuction.GetOpenAuctions', args);
 			//TODO: C# return ret;
