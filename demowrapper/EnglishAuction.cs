@@ -253,14 +253,6 @@ namespace wrappers {
 			//TODO: C# return ret;
 		}
 
-SHORTCUT??
-SHORTCUT??
-SHORTCUT??
-SHORTCUT??
-SHORTCUT??
-SHORTCUT??
-SHORTCUT??
-SHORTCUT??
 	}
 }
 

@@ -69,102 +69,102 @@ namespace englishauction {
 			#line 103 "/my-component/src/englishauction/EnglishAuction.hx"
 			this.maglev.register("EnglishAuction.Bid", global::maglev.MagLevFunction.fromFunction(new global::englishauction.EnglishAuction_registerMyMethods_103__Fun(_gthis)));
 			#line 117 "/my-component/src/englishauction/EnglishAuction.hx"
-			this.maglev.register("EnglishAuction.GetHighestBidder", global::maglev.MagLevFunction.fromFunction(new global::englishauction.EnglishAuction_registerMyMethods_117__Fun(bus)));
-			#line 152 "/my-component/src/englishauction/EnglishAuction.hx"
-			this.maglev.register("EnglishAuction.GetHighestBids", global::maglev.MagLevFunction.fromFunction(new global::englishauction.EnglishAuction_registerMyMethods_152__Fun(bus)));
-			#line 190 "/my-component/src/englishauction/EnglishAuction.hx"
-			this.maglev.register("EnglishAuction.GetNumberOfBids", global::maglev.MagLevFunction.fromFunction(new global::englishauction.EnglishAuction_registerMyMethods_190__Fun(_gthis)));
-			#line 198 "/my-component/src/englishauction/EnglishAuction.hx"
-			this.maglev.register("EnglishAuction.GetPriceIncrement", global::maglev.MagLevFunction.fromFunction(new global::englishauction.EnglishAuction_registerMyMethods_198__Fun(_gthis)));
-			#line 213 "/my-component/src/englishauction/EnglishAuction.hx"
-			this.maglev.register("EnglishAuction.GetPriceIncrement", global::maglev.MagLevFunction.fromFunction(new global::englishauction.EnglishAuction_registerMyMethods_213__Fun(_gthis)));
-			#line 228 "/my-component/src/englishauction/EnglishAuction.hx"
-			this.maglev.register("EnglishAuction.GetReservePrice", global::maglev.MagLevFunction.fromFunction(new global::englishauction.EnglishAuction_registerMyMethods_228__Fun(_gthis)));
-			#line 243 "/my-component/src/englishauction/EnglishAuction.hx"
-			this.maglev.register("EnglishAuction.GetStartingPrice", global::maglev.MagLevFunction.fromFunction(new global::englishauction.EnglishAuction_registerMyMethods_243__Fun(_gthis)));
-			#line 258 "/my-component/src/englishauction/EnglishAuction.hx"
-			this.maglev.register("EnglishAuction.CalcMinimumBid", global::maglev.MagLevFunction.fromFunction(new global::englishauction.EnglishAuction_registerMyMethods_258__Fun(_gthis)));
-			#line 283 "/my-component/src/englishauction/EnglishAuction.hx"
-			this.maglev.register("EnglishAuction.CalcTimeRemaining", global::maglev.MagLevFunction.fromFunction(new global::englishauction.EnglishAuction_registerMyMethods_283__Fun(_gthis)));
-			#line 307 "/my-component/src/englishauction/EnglishAuction.hx"
-			this.maglev.register("EnglishAuction.GetAuctionsEnding", global::maglev.MagLevFunction.fromFunction(new global::englishauction.EnglishAuction_registerMyMethods_307__Fun(_gthis)));
-			#line 331 "/my-component/src/englishauction/EnglishAuction.hx"
-			this.maglev.register("EnglishAuction.GetAuctionsStarting", global::maglev.MagLevFunction.fromFunction(new global::englishauction.EnglishAuction_registerMyMethods_331__Fun(_gthis)));
-			#line 355 "/my-component/src/englishauction/EnglishAuction.hx"
-			this.maglev.register("EnglishAuction.GetOpenAuctions", global::maglev.MagLevFunction.fromFunction(new global::englishauction.EnglishAuction_registerMyMethods_355__Fun(_gthis)));
+			this.maglev.register("EnglishAuction.GetHighestBidder", global::maglev.MagLevFunction.fromFunction(new global::englishauction.EnglishAuction_registerMyMethods_117__Fun(_gthis)));
+			#line 133 "/my-component/src/englishauction/EnglishAuction.hx"
+			this.maglev.register("EnglishAuction.GetHighestBids", global::maglev.MagLevFunction.fromFunction(new global::englishauction.EnglishAuction_registerMyMethods_133__Fun(_gthis)));
+			#line 149 "/my-component/src/englishauction/EnglishAuction.hx"
+			this.maglev.register("EnglishAuction.GetNumberOfBids", global::maglev.MagLevFunction.fromFunction(new global::englishauction.EnglishAuction_registerMyMethods_149__Fun(_gthis)));
+			#line 157 "/my-component/src/englishauction/EnglishAuction.hx"
+			this.maglev.register("EnglishAuction.GetPriceIncrement", global::maglev.MagLevFunction.fromFunction(new global::englishauction.EnglishAuction_registerMyMethods_157__Fun(_gthis)));
+			#line 172 "/my-component/src/englishauction/EnglishAuction.hx"
+			this.maglev.register("EnglishAuction.GetPriceIncrement", global::maglev.MagLevFunction.fromFunction(new global::englishauction.EnglishAuction_registerMyMethods_172__Fun(_gthis)));
+			#line 187 "/my-component/src/englishauction/EnglishAuction.hx"
+			this.maglev.register("EnglishAuction.GetReservePrice", global::maglev.MagLevFunction.fromFunction(new global::englishauction.EnglishAuction_registerMyMethods_187__Fun(_gthis)));
+			#line 202 "/my-component/src/englishauction/EnglishAuction.hx"
+			this.maglev.register("EnglishAuction.GetStartingPrice", global::maglev.MagLevFunction.fromFunction(new global::englishauction.EnglishAuction_registerMyMethods_202__Fun(_gthis)));
+			#line 217 "/my-component/src/englishauction/EnglishAuction.hx"
+			this.maglev.register("EnglishAuction.CalcMinimumBid", global::maglev.MagLevFunction.fromFunction(new global::englishauction.EnglishAuction_registerMyMethods_217__Fun(_gthis)));
+			#line 242 "/my-component/src/englishauction/EnglishAuction.hx"
+			this.maglev.register("EnglishAuction.CalcTimeRemaining", global::maglev.MagLevFunction.fromFunction(new global::englishauction.EnglishAuction_registerMyMethods_242__Fun(_gthis)));
+			#line 266 "/my-component/src/englishauction/EnglishAuction.hx"
+			this.maglev.register("EnglishAuction.GetAuctionsEnding", global::maglev.MagLevFunction.fromFunction(new global::englishauction.EnglishAuction_registerMyMethods_266__Fun(_gthis)));
+			#line 290 "/my-component/src/englishauction/EnglishAuction.hx"
+			this.maglev.register("EnglishAuction.GetAuctionsStarting", global::maglev.MagLevFunction.fromFunction(new global::englishauction.EnglishAuction_registerMyMethods_290__Fun(_gthis)));
+			#line 314 "/my-component/src/englishauction/EnglishAuction.hx"
+			this.maglev.register("EnglishAuction.GetOpenAuctions", global::maglev.MagLevFunction.fromFunction(new global::englishauction.EnglishAuction_registerMyMethods_314__Fun(_gthis)));
 		}
 		#line default
 		
 		public virtual global::maglev.MagLevObject auctionModelToMagLevObject(global::englishauction.AuctionModel m) {
-			#line 387 "/my-component/src/englishauction/EnglishAuction.hx"
+			#line 346 "/my-component/src/englishauction/EnglishAuction.hx"
 			global::maglev.MagLevObject o = global::maglev.MagLevObject.create();
 			o.@set("auctionId", global::maglev.MagLevString.fromString(m.id));
-			#line 389 "/my-component/src/englishauction/EnglishAuction.hx"
+			#line 348 "/my-component/src/englishauction/EnglishAuction.hx"
 			o.@set("start", global::maglev.MagLevNumber.fromInt(m.start));
 			o.@set("end", global::maglev.MagLevNumber.fromInt(m.end));
-			#line 391 "/my-component/src/englishauction/EnglishAuction.hx"
+			#line 350 "/my-component/src/englishauction/EnglishAuction.hx"
 			o.@set("startingPrice", global::maglev.MagLevNumber.fromFloat(m.startingPrice));
 			o.@set("reservePrice", global::maglev.MagLevNumber.fromFloat(m.reservePrice));
-			#line 393 "/my-component/src/englishauction/EnglishAuction.hx"
+			#line 352 "/my-component/src/englishauction/EnglishAuction.hx"
 			o.@set("priceIncrement", global::maglev.MagLevNumber.fromFloat(m.priceIncrement));
 			return o;
 		}
 		#line default
 		
 		public virtual object convertToHaxe(global::maglev.MagLevAny x) {
-			#line 398 "/my-component/src/englishauction/EnglishAuction.hx"
+			#line 357 "/my-component/src/englishauction/EnglishAuction.hx"
 			if (( x.getType() == global::maglev.MagLevNull.getStaticType() )) {
-				#line 399 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 358 "/my-component/src/englishauction/EnglishAuction.hx"
 				return null;
 			}
 			else if (( x.getType() == global::maglev.MagLevBoolean.getStaticType() )) {
-				#line 402 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 361 "/my-component/src/englishauction/EnglishAuction.hx"
 				global::maglev.MagLevBoolean y = ((global::maglev.MagLevBoolean) (x) );
 				return ((object) (y.getBool()) );
 			}
 			else if (( x.getType() == global::maglev.MagLevString.getStaticType() )) {
-				#line 406 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 365 "/my-component/src/englishauction/EnglishAuction.hx"
 				global::maglev.MagLevString y1 = ((global::maglev.MagLevString) (x) );
 				return ((object) (y1.getString()) );
 			}
 			else if (( x.getType() == global::maglev.MagLevNumber.getStaticType() )) {
-				#line 410 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 369 "/my-component/src/englishauction/EnglishAuction.hx"
 				global::maglev.MagLevNumber y2 = ((global::maglev.MagLevNumber) (x) );
 				return ((object) (y2.getFloat()) );
 			}
 			else if (( x.getType() == global::maglev.MagLevArray.getStaticType() )) {
-				#line 414 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 373 "/my-component/src/englishauction/EnglishAuction.hx"
 				global::maglev.MagLevArray y3 = ((global::maglev.MagLevArray) (x) );
 				global::Array<object> arr = new global::Array<object>();
-				#line 416 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 375 "/my-component/src/englishauction/EnglishAuction.hx"
 				int i = 0;
 				while (( i < y3.size() )) {
-					#line 418 "/my-component/src/englishauction/EnglishAuction.hx"
+					#line 377 "/my-component/src/englishauction/EnglishAuction.hx"
 					arr.push(this.convertToHaxe(y3.@get(i)));
 				}
 				
-				#line 420 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 379 "/my-component/src/englishauction/EnglishAuction.hx"
 				return ((object) (arr) );
 			}
 			else if (( x.getType() == global::maglev.MagLevObject.getStaticType() )) {
-				#line 423 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 382 "/my-component/src/englishauction/EnglishAuction.hx"
 				global::maglev.MagLevObject y4 = ((global::maglev.MagLevObject) (x) );
 				global::haxe.ds.StringMap<object> map = new global::haxe.ds.StringMap<object>();
-				#line 425 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 384 "/my-component/src/englishauction/EnglishAuction.hx"
 				global::maglev.MagLevArray keys = y4.keys();
 				int i1 = 0;
-				#line 427 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 386 "/my-component/src/englishauction/EnglishAuction.hx"
 				while (( i1 < keys.size() )) {
-					#line 428 "/my-component/src/englishauction/EnglishAuction.hx"
+					#line 387 "/my-component/src/englishauction/EnglishAuction.hx"
 					string key = (((global::maglev.MagLevString) (keys.@get(i1)) )).getString();
 					map.@set(key, this.convertToHaxe(y4.@get(key)));
 				}
 				
-				#line 431 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 390 "/my-component/src/englishauction/EnglishAuction.hx"
 				return ((object) (map) );
 			}
 			else {
-				#line 434 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 393 "/my-component/src/englishauction/EnglishAuction.hx"
 				throw ((global::System.Exception) (global::haxe.Exception.thrown("convertToHaxe: unknown type")) );
 			}
 			
@@ -172,100 +172,100 @@ namespace englishauction {
 		#line default
 		
 		public virtual global::maglev.MagLevAny convertToMagLev(object x) {
-			#line 439 "/my-component/src/englishauction/EnglishAuction.hx"
+			#line 398 "/my-component/src/englishauction/EnglishAuction.hx"
 			if (( x == null )) {
-				#line 440 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 399 "/my-component/src/englishauction/EnglishAuction.hx"
 				return global::maglev.MagLevNull.create();
 			}
 			else if (global::Std.isOfType(((object) (x) ), ((object) (typeof(bool)) ))) {
-				#line 443 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 402 "/my-component/src/englishauction/EnglishAuction.hx"
 				return global::maglev.MagLevBoolean.fromBool(global::haxe.lang.Runtime.toBool(x));
 			}
 			else if (global::Std.isOfType(((object) (x) ), ((object) (typeof(string)) ))) {
-				#line 446 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 405 "/my-component/src/englishauction/EnglishAuction.hx"
 				return global::maglev.MagLevString.fromString(global::haxe.lang.Runtime.toString(x));
 			}
 			else if (global::Std.isOfType(((object) (x) ), ((object) (typeof(int)) ))) {
-				#line 449 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 408 "/my-component/src/englishauction/EnglishAuction.hx"
 				return global::maglev.MagLevNumber.fromInt(((int) (global::haxe.lang.Runtime.toInt(x)) ));
 			}
 			else if (global::Std.isOfType(((object) (x) ), ((object) (typeof(double)) ))) {
-				#line 452 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 411 "/my-component/src/englishauction/EnglishAuction.hx"
 				return global::maglev.MagLevNumber.fromFloat(((double) (global::haxe.lang.Runtime.toDouble(((object) (x) ))) ));
 			}
 			else if (global::Std.isOfType(((object) (x) ), ((object) (typeof(global::Array<object>)) ))) {
-				#line 455 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 414 "/my-component/src/englishauction/EnglishAuction.hx"
 				global::maglev.MagLevArray arr = global::maglev.MagLevArray.create();
 				global::Array<object> y = ((global::Array<object>) (global::Array<object>.__hx_cast<object>(((global::Array) (((object) (x) )) ))) );
-				#line 457 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 416 "/my-component/src/englishauction/EnglishAuction.hx"
 				{
-					#line 457 "/my-component/src/englishauction/EnglishAuction.hx"
+					#line 416 "/my-component/src/englishauction/EnglishAuction.hx"
 					int _g = 0;
-					#line 457 "/my-component/src/englishauction/EnglishAuction.hx"
+					#line 416 "/my-component/src/englishauction/EnglishAuction.hx"
 					while (( _g < y.length )) {
-						#line 457 "/my-component/src/englishauction/EnglishAuction.hx"
+						#line 416 "/my-component/src/englishauction/EnglishAuction.hx"
 						object item = y[_g];
-						#line 457 "/my-component/src/englishauction/EnglishAuction.hx"
+						#line 416 "/my-component/src/englishauction/EnglishAuction.hx"
 						 ++ _g;
 						arr.push(this.convertToMagLev(item));
 					}
 					
 				}
 				
-				#line 460 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 419 "/my-component/src/englishauction/EnglishAuction.hx"
 				return arr;
 			}
 			else if (global::Std.isOfType(((object) (x) ), ((object) (typeof(global::haxe.ds.StringMap<object>)) ))) {
-				#line 463 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 422 "/my-component/src/englishauction/EnglishAuction.hx"
 				global::haxe.ds.StringMap<object> map = ((global::haxe.ds.StringMap<object>) (global::haxe.ds.StringMap<object>.__hx_cast<object>(((global::haxe.ds.StringMap) (((object) (x) )) ))) );
 				global::maglev.MagLevObject obj = global::maglev.MagLevObject.create();
-				#line 465 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 424 "/my-component/src/englishauction/EnglishAuction.hx"
 				{
-					#line 465 "/my-component/src/englishauction/EnglishAuction.hx"
+					#line 424 "/my-component/src/englishauction/EnglishAuction.hx"
 					object key = ((object) (new global::haxe.ds._StringMap.StringMapKeyIterator<object>(((global::haxe.ds.StringMap<object>) (map) ))) );
-					#line 465 "/my-component/src/englishauction/EnglishAuction.hx"
+					#line 424 "/my-component/src/englishauction/EnglishAuction.hx"
 					while (global::haxe.lang.Runtime.toBool(global::haxe.lang.Runtime.callField(key, "hasNext", 407283053, null))) {
-						#line 465 "/my-component/src/englishauction/EnglishAuction.hx"
+						#line 424 "/my-component/src/englishauction/EnglishAuction.hx"
 						string key1 = global::haxe.lang.Runtime.toString(global::haxe.lang.Runtime.callField(key, "next", 1224901875, null));
 						obj.@set(key1, this.convertToMagLev((map.@get(key1)).toDynamic()));
 					}
 					
 				}
 				
-				#line 468 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 427 "/my-component/src/englishauction/EnglishAuction.hx"
 				return obj;
 			}
 			else if (global::Reflect.isObject(x)) {
-				#line 471 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 430 "/my-component/src/englishauction/EnglishAuction.hx"
 				global::maglev.MagLevObject obj1 = global::maglev.MagLevObject.create();
 				{
-					#line 472 "/my-component/src/englishauction/EnglishAuction.hx"
+					#line 431 "/my-component/src/englishauction/EnglishAuction.hx"
 					int _g1 = 0;
-					#line 472 "/my-component/src/englishauction/EnglishAuction.hx"
+					#line 431 "/my-component/src/englishauction/EnglishAuction.hx"
 					global::Array<string> _g2 = global::Reflect.fields(x);
-					#line 472 "/my-component/src/englishauction/EnglishAuction.hx"
+					#line 431 "/my-component/src/englishauction/EnglishAuction.hx"
 					while (( _g1 < _g2.length )) {
-						#line 472 "/my-component/src/englishauction/EnglishAuction.hx"
+						#line 431 "/my-component/src/englishauction/EnglishAuction.hx"
 						string field = _g2[_g1];
-						#line 472 "/my-component/src/englishauction/EnglishAuction.hx"
+						#line 431 "/my-component/src/englishauction/EnglishAuction.hx"
 						 ++ _g1;
 						object val = global::Reflect.getProperty(x, field);
-						#line 474 "/my-component/src/englishauction/EnglishAuction.hx"
+						#line 433 "/my-component/src/englishauction/EnglishAuction.hx"
 						obj1.@set(field, this.convertToMagLev(val));
 					}
 					
 				}
 				
-				#line 476 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 435 "/my-component/src/englishauction/EnglishAuction.hx"
 				return obj1;
 			}
 			else if (( ((object) (x) ) is global::haxe.lang.Function )) {
-				#line 479 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 438 "/my-component/src/englishauction/EnglishAuction.hx"
 				global::haxe.lang.Function f = ((global::haxe.lang.Function) (((object) (x) )) );
 				return global::maglev.MagLevFunction.fromFunction(f);
 			}
 			else {
-				#line 483 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 442 "/my-component/src/englishauction/EnglishAuction.hx"
 				throw ((global::System.Exception) (global::haxe.Exception.thrown("convertToMagLev: unknown type")) );
 			}
 			
@@ -863,66 +863,34 @@ namespace englishauction {
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
 namespace englishauction {
-	public class EnglishAuction_registerMyMethods_128__Fun : global::haxe.lang.Function {
+	public class EnglishAuction_registerMyMethods_120__Fun : global::haxe.lang.Function {
 		
-		public EnglishAuction_registerMyMethods_128__Fun() : base(1, 0) {
-		}
-		
-		
-		public static global::englishauction.EnglishAuction_registerMyMethods_128__Fun __hx_current;
-		
-		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 128 "/my-component/src/englishauction/EnglishAuction.hx"
-			global::maglev.MagLevError error = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevError) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevError) (__fn_dyn1) )) );
-			throw ((global::System.Exception) (global::haxe.Exception.thrown(error.getMessage())) );
-		}
-		#line default
-		
-	}
-}
-
-
-
-#pragma warning disable 109, 114, 219, 429, 168, 162
-namespace englishauction {
-	public class EnglishAuction_registerMyMethods_131__Fun : global::haxe.lang.Function {
-		
-		public EnglishAuction_registerMyMethods_131__Fun(global::maglev.MagLevResult myresult) : base(1, 0) {
-			#line 131 "/my-component/src/englishauction/EnglishAuction.hx"
+		public EnglishAuction_registerMyMethods_120__Fun(global::maglev.MagLevResult myresult) : base(1, 0) {
+			#line 121 "/my-component/src/englishauction/EnglishAuction.hx"
 			this.myresult = myresult;
 		}
 		#line default
 		
 		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 131 "/my-component/src/englishauction/EnglishAuction.hx"
-			global::maglev.MagLevAny res = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevAny) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevAny) (__fn_dyn1) )) );
-			if (global::Std.isOfType(((object) (res) ), ((object) (typeof(global::maglev.MagLevArray)) ))) {
-				#line 133 "/my-component/src/englishauction/EnglishAuction.hx"
-				global::maglev.MagLevArray resarr = ((global::maglev.MagLevArray) (res) );
-				if (( resarr.size() > 0 )) {
-					#line 135 "/my-component/src/englishauction/EnglishAuction.hx"
-					global::maglev.MagLevObject row = ((global::maglev.MagLevObject) (resarr.@get(0)) );
-					global::maglev.MagLevObject row2 = global::maglev.MagLevObject.create();
-					#line 137 "/my-component/src/englishauction/EnglishAuction.hx"
-					row2.@set("userId", row.@get("userId"));
-					row2.@set("price", row.@get("price"));
-					#line 139 "/my-component/src/englishauction/EnglishAuction.hx"
-					this.myresult.setResult(row2);
-				}
-				else {
-					#line 141 "/my-component/src/englishauction/EnglishAuction.hx"
-					this.myresult.setResult(global::maglev.MagLevNull.create());
-				}
-				
+			#line 120 "/my-component/src/englishauction/EnglishAuction.hx"
+			global::Array<object> bids = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::Array<object>) (global::Array<object>.__hx_cast<object>(((global::Array) (((object) (__fn_float1) )) ))) )) : (((global::Array<object>) (global::Array<object>.__hx_cast<object>(((global::Array) (__fn_dyn1) ))) )) );
+			if (( bids.length > 0 )) {
+				#line 122 "/my-component/src/englishauction/EnglishAuction.hx"
+				global::englishauction.BidModel row = ((global::englishauction.BidModel) (bids[0]) );
+				global::maglev.MagLevObject myrow = global::maglev.MagLevObject.create();
+				#line 124 "/my-component/src/englishauction/EnglishAuction.hx"
+				myrow.@set("userId", global::maglev.MagLevString.fromString(row.userId));
+				myrow.@set("price", global::maglev.MagLevNumber.fromFloat(row.price));
+				#line 126 "/my-component/src/englishauction/EnglishAuction.hx"
+				this.myresult.setResult(myrow);
 			}
 			else {
-				#line 145 "/my-component/src/englishauction/EnglishAuction.hx"
-				global::maglev.MagLevError error = global::maglev.MagLevError.create(0, "persistence getter did not return array", global::maglev.MagLevNull.create());
-				this.myresult.setError(error);
+				#line 128 "/my-component/src/englishauction/EnglishAuction.hx"
+				this.myresult.setResult(global::maglev.MagLevNull.create());
 			}
 			
-			#line 148 "/my-component/src/englishauction/EnglishAuction.hx"
-			return global::maglev.MagLevResult.fromResult(global::maglev.MagLevNull.create());
+			#line 121 "/my-component/src/englishauction/EnglishAuction.hx"
+			return null;
 		}
 		#line default
 		
@@ -937,9 +905,9 @@ namespace englishauction {
 namespace englishauction {
 	public class EnglishAuction_registerMyMethods_117__Fun : global::haxe.lang.Function {
 		
-		public EnglishAuction_registerMyMethods_117__Fun(global::maglev.MagLev bus) : base(1, 0) {
+		public EnglishAuction_registerMyMethods_117__Fun(global::englishauction.EnglishAuction _gthis) : base(1, 0) {
 			#line 117 "/my-component/src/englishauction/EnglishAuction.hx"
-			this.bus = bus;
+			this._gthis = _gthis;
 		}
 		#line default
 		
@@ -949,30 +917,16 @@ namespace englishauction {
 				global::maglev.MagLevArray args = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevArray) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevArray) (__fn_dyn1) )) );
 				global::maglev.MagLevString auctionId = ((global::maglev.MagLevString) (args.@get(0)) );
 				#line 119 "/my-component/src/englishauction/EnglishAuction.hx"
-				global::maglev.MagLevArray myargs = global::maglev.MagLevArray.create();
-				myargs.push(auctionId);
-				#line 121 "/my-component/src/englishauction/EnglishAuction.hx"
-				myargs.push(global::maglev.MagLevNumber.fromInt(1));
-				global::maglev.MagLevArray myargs2 = global::maglev.MagLevArray.create();
-				#line 123 "/my-component/src/englishauction/EnglishAuction.hx"
-				myargs2.push(global::maglev.MagLevString.fromString("EnglishAuction.Bid"));
-				myargs2.push(global::maglev.MagLevString.fromString("FindByHighestPriceForAuction"));
-				#line 125 "/my-component/src/englishauction/EnglishAuction.hx"
-				myargs2.push(myargs);
-				global::maglev.MagLevResult ret = this.bus.call("Persistence.Get", myargs2);
-				#line 127 "/my-component/src/englishauction/EnglishAuction.hx"
 				global::maglev.MagLevResult myresult = global::maglev.MagLevResult.createAsync();
-				ret.onError(( (( global::englishauction.EnglishAuction_registerMyMethods_128__Fun.__hx_current != null )) ? (global::englishauction.EnglishAuction_registerMyMethods_128__Fun.__hx_current) : (global::englishauction.EnglishAuction_registerMyMethods_128__Fun.__hx_current = ((global::englishauction.EnglishAuction_registerMyMethods_128__Fun) (new global::englishauction.EnglishAuction_registerMyMethods_128__Fun()) )) ));
+				this._gthis.bidRepo.GetHighestBids(auctionId.getString(), 1, new global::englishauction.EnglishAuction_registerMyMethods_120__Fun(myresult));
 				#line 131 "/my-component/src/englishauction/EnglishAuction.hx"
-				ret.onResult(new global::englishauction.EnglishAuction_registerMyMethods_131__Fun(myresult));
-				#line 150 "/my-component/src/englishauction/EnglishAuction.hx"
 				return myresult;
 			}
 			#line default
 		}
 		
 		
-		public global::maglev.MagLev bus;
+		public global::englishauction.EnglishAuction _gthis;
 		
 	}
 }
@@ -981,69 +935,42 @@ namespace englishauction {
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
 namespace englishauction {
-	public class EnglishAuction_registerMyMethods_164__Fun : global::haxe.lang.Function {
+	public class EnglishAuction_registerMyMethods_137__Fun : global::haxe.lang.Function {
 		
-		public EnglishAuction_registerMyMethods_164__Fun() : base(1, 0) {
-		}
-		
-		
-		public static global::englishauction.EnglishAuction_registerMyMethods_164__Fun __hx_current;
-		
-		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 164 "/my-component/src/englishauction/EnglishAuction.hx"
-			global::maglev.MagLevError error = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevError) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevError) (__fn_dyn1) )) );
-			throw ((global::System.Exception) (global::haxe.Exception.thrown(error.getMessage())) );
-		}
-		#line default
-		
-	}
-}
-
-
-
-#pragma warning disable 109, 114, 219, 429, 168, 162
-namespace englishauction {
-	public class EnglishAuction_registerMyMethods_167__Fun : global::haxe.lang.Function {
-		
-		public EnglishAuction_registerMyMethods_167__Fun(global::maglev.MagLevResult myresult) : base(1, 0) {
-			#line 167 "/my-component/src/englishauction/EnglishAuction.hx"
+		public EnglishAuction_registerMyMethods_137__Fun(global::maglev.MagLevResult myresult) : base(1, 0) {
+			#line 137 "/my-component/src/englishauction/EnglishAuction.hx"
 			this.myresult = myresult;
 		}
 		#line default
 		
 		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 167 "/my-component/src/englishauction/EnglishAuction.hx"
-			global::maglev.MagLevAny res = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevAny) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevAny) (__fn_dyn1) )) );
-			global::maglev.MagLevArray bids = global::maglev.MagLevArray.create();
-			#line 169 "/my-component/src/englishauction/EnglishAuction.hx"
-			if (global::Std.isOfType(((object) (res) ), ((object) (typeof(global::maglev.MagLevArray)) ))) {
-				#line 170 "/my-component/src/englishauction/EnglishAuction.hx"
-				global::maglev.MagLevArray resarr = ((global::maglev.MagLevArray) (res) );
-				int i = 0;
-				#line 172 "/my-component/src/englishauction/EnglishAuction.hx"
-				while (( i < resarr.size() )) {
-					#line 173 "/my-component/src/englishauction/EnglishAuction.hx"
-					global::maglev.MagLevObject row = ((global::maglev.MagLevObject) (resarr.@get(i)) );
-					global::maglev.MagLevObject row2 = global::maglev.MagLevObject.create();
-					#line 175 "/my-component/src/englishauction/EnglishAuction.hx"
-					row2.@set("userId", row.@get("userId"));
-					row2.@set("price", row.@get("price"));
-					#line 177 "/my-component/src/englishauction/EnglishAuction.hx"
-					bids.push(row2);
-					 ++ i;
+			#line 137 "/my-component/src/englishauction/EnglishAuction.hx"
+			global::Array<object> bids = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::Array<object>) (global::Array<object>.__hx_cast<object>(((global::Array) (((object) (__fn_float1) )) ))) )) : (((global::Array<object>) (global::Array<object>.__hx_cast<object>(((global::Array) (__fn_dyn1) ))) )) );
+			global::maglev.MagLevArray rows = global::maglev.MagLevArray.create();
+			#line 139 "/my-component/src/englishauction/EnglishAuction.hx"
+			{
+				#line 139 "/my-component/src/englishauction/EnglishAuction.hx"
+				int _g = 0;
+				#line 139 "/my-component/src/englishauction/EnglishAuction.hx"
+				while (( _g < bids.length )) {
+					#line 139 "/my-component/src/englishauction/EnglishAuction.hx"
+					global::englishauction.BidModel bid = ((global::englishauction.BidModel) (bids[_g]) );
+					#line 139 "/my-component/src/englishauction/EnglishAuction.hx"
+					 ++ _g;
+					global::maglev.MagLevObject myrow = global::maglev.MagLevObject.create();
+					#line 141 "/my-component/src/englishauction/EnglishAuction.hx"
+					myrow.@set("userId", global::maglev.MagLevString.fromString(bid.userId));
+					myrow.@set("price", global::maglev.MagLevNumber.fromFloat(bid.price));
+					#line 143 "/my-component/src/englishauction/EnglishAuction.hx"
+					rows.push(myrow);
 				}
 				
-				#line 180 "/my-component/src/englishauction/EnglishAuction.hx"
-				this.myresult.setResult(bids);
-			}
-			else {
-				#line 183 "/my-component/src/englishauction/EnglishAuction.hx"
-				global::maglev.MagLevError error = global::maglev.MagLevError.create(0, "persistence getter did not return array", global::maglev.MagLevNull.create());
-				this.myresult.setError(error);
 			}
 			
-			#line 186 "/my-component/src/englishauction/EnglishAuction.hx"
-			return global::maglev.MagLevResult.fromResult(global::maglev.MagLevNull.create());
+			#line 145 "/my-component/src/englishauction/EnglishAuction.hx"
+			this.myresult.setResult(rows);
+			#line 137 "/my-component/src/englishauction/EnglishAuction.hx"
+			return null;
 		}
 		#line default
 		
@@ -1056,46 +983,32 @@ namespace englishauction {
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
 namespace englishauction {
-	public class EnglishAuction_registerMyMethods_152__Fun : global::haxe.lang.Function {
+	public class EnglishAuction_registerMyMethods_133__Fun : global::haxe.lang.Function {
 		
-		public EnglishAuction_registerMyMethods_152__Fun(global::maglev.MagLev bus) : base(1, 0) {
-			#line 152 "/my-component/src/englishauction/EnglishAuction.hx"
-			this.bus = bus;
+		public EnglishAuction_registerMyMethods_133__Fun(global::englishauction.EnglishAuction _gthis) : base(1, 0) {
+			#line 133 "/my-component/src/englishauction/EnglishAuction.hx"
+			this._gthis = _gthis;
 		}
 		#line default
 		
 		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
 			unchecked {
-				#line 152 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 133 "/my-component/src/englishauction/EnglishAuction.hx"
 				global::maglev.MagLevArray args = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevArray) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevArray) (__fn_dyn1) )) );
 				global::maglev.MagLevString auctionId = ((global::maglev.MagLevString) (args.@get(0)) );
-				#line 154 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 135 "/my-component/src/englishauction/EnglishAuction.hx"
 				global::maglev.MagLevNumber numBids = ((global::maglev.MagLevNumber) (args.@get(1)) );
-				global::maglev.MagLevArray myargs = global::maglev.MagLevArray.create();
-				#line 156 "/my-component/src/englishauction/EnglishAuction.hx"
-				myargs.push(auctionId);
-				myargs.push(numBids);
-				#line 158 "/my-component/src/englishauction/EnglishAuction.hx"
-				global::maglev.MagLevArray myargs2 = global::maglev.MagLevArray.create();
-				myargs2.push(global::maglev.MagLevString.fromString("EnglishAuction.Bid"));
-				#line 160 "/my-component/src/englishauction/EnglishAuction.hx"
-				myargs2.push(global::maglev.MagLevString.fromString("FindByHighestPriceForAuction"));
-				myargs2.push(myargs);
-				#line 162 "/my-component/src/englishauction/EnglishAuction.hx"
-				global::maglev.MagLevResult ret = this.bus.call("Persistence.Get", myargs2);
 				global::maglev.MagLevResult myresult = global::maglev.MagLevResult.createAsync();
-				#line 164 "/my-component/src/englishauction/EnglishAuction.hx"
-				ret.onError(( (( global::englishauction.EnglishAuction_registerMyMethods_164__Fun.__hx_current != null )) ? (global::englishauction.EnglishAuction_registerMyMethods_164__Fun.__hx_current) : (global::englishauction.EnglishAuction_registerMyMethods_164__Fun.__hx_current = ((global::englishauction.EnglishAuction_registerMyMethods_164__Fun) (new global::englishauction.EnglishAuction_registerMyMethods_164__Fun()) )) ));
-				#line 167 "/my-component/src/englishauction/EnglishAuction.hx"
-				ret.onResult(new global::englishauction.EnglishAuction_registerMyMethods_167__Fun(myresult));
-				#line 188 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 137 "/my-component/src/englishauction/EnglishAuction.hx"
+				this._gthis.bidRepo.GetHighestBids(auctionId.getString(), numBids.getInt(), new global::englishauction.EnglishAuction_registerMyMethods_137__Fun(myresult));
+				#line 147 "/my-component/src/englishauction/EnglishAuction.hx"
 				return myresult;
 			}
 			#line default
 		}
 		
 		
-		public global::maglev.MagLev bus;
+		public global::englishauction.EnglishAuction _gthis;
 		
 	}
 }
@@ -1104,16 +1017,16 @@ namespace englishauction {
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
 namespace englishauction {
-	public class EnglishAuction_registerMyMethods_193__Fun : global::haxe.lang.Function {
+	public class EnglishAuction_registerMyMethods_152__Fun : global::haxe.lang.Function {
 		
-		public EnglishAuction_registerMyMethods_193__Fun(global::maglev.MagLevResult result) : base(1, 0) {
-			#line 194 "/my-component/src/englishauction/EnglishAuction.hx"
+		public EnglishAuction_registerMyMethods_152__Fun(global::maglev.MagLevResult result) : base(1, 0) {
+			#line 153 "/my-component/src/englishauction/EnglishAuction.hx"
 			this.result = result;
 		}
 		#line default
 		
 		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 193 "/my-component/src/englishauction/EnglishAuction.hx"
+			#line 152 "/my-component/src/englishauction/EnglishAuction.hx"
 			int numBids = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((int) (__fn_float1) )) : (((int) (global::haxe.lang.Runtime.toInt(__fn_dyn1)) )) );
 			this.result.setResult(global::maglev.MagLevNumber.fromInt(numBids));
 			return null;
@@ -1129,194 +1042,194 @@ namespace englishauction {
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
 namespace englishauction {
+	public class EnglishAuction_registerMyMethods_149__Fun : global::haxe.lang.Function {
+		
+		public EnglishAuction_registerMyMethods_149__Fun(global::englishauction.EnglishAuction _gthis) : base(1, 0) {
+			#line 149 "/my-component/src/englishauction/EnglishAuction.hx"
+			this._gthis = _gthis;
+		}
+		#line default
+		
+		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
+			#line 149 "/my-component/src/englishauction/EnglishAuction.hx"
+			global::maglev.MagLevArray args = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevArray) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevArray) (__fn_dyn1) )) );
+			string auctionId = (((global::maglev.MagLevString) (args.@get(0)) )).getString();
+			#line 151 "/my-component/src/englishauction/EnglishAuction.hx"
+			global::maglev.MagLevResult result = global::maglev.MagLevResult.createAsync();
+			this._gthis.bidRepo.GetNumberOfBids(auctionId, new global::englishauction.EnglishAuction_registerMyMethods_152__Fun(result));
+			#line 155 "/my-component/src/englishauction/EnglishAuction.hx"
+			return result;
+		}
+		#line default
+		
+		public global::englishauction.EnglishAuction _gthis;
+		
+	}
+}
+
+
+
+#pragma warning disable 109, 114, 219, 429, 168, 162
+namespace englishauction {
+	public class EnglishAuction_registerMyMethods_160__Fun : global::haxe.lang.Function {
+		
+		public EnglishAuction_registerMyMethods_160__Fun(global::maglev.MagLevResult result) : base(1, 0) {
+			#line 161 "/my-component/src/englishauction/EnglishAuction.hx"
+			this.result = result;
+		}
+		#line default
+		
+		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
+			#line 160 "/my-component/src/englishauction/EnglishAuction.hx"
+			global::englishauction.AuctionModel auction = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::englishauction.AuctionModel) (((object) (__fn_float1) )) )) : (((global::englishauction.AuctionModel) (__fn_dyn1) )) );
+			if (( auction == null )) {
+				#line 162 "/my-component/src/englishauction/EnglishAuction.hx"
+				global::maglev.MagLevError error = global::maglev.MagLevError.create(0, "auction not found", global::maglev.MagLevNull.create());
+				this.result.setError(error);
+			}
+			else {
+				#line 165 "/my-component/src/englishauction/EnglishAuction.hx"
+				double priceIncrement = auction.priceIncrement;
+				global::maglev.MagLevNumber ret = global::maglev.MagLevNumber.fromFloat(priceIncrement);
+				#line 167 "/my-component/src/englishauction/EnglishAuction.hx"
+				this.result.setResult(ret);
+			}
+			
+			#line 161 "/my-component/src/englishauction/EnglishAuction.hx"
+			return null;
+		}
+		#line default
+		
+		public global::maglev.MagLevResult result;
+		
+	}
+}
+
+
+
+#pragma warning disable 109, 114, 219, 429, 168, 162
+namespace englishauction {
+	public class EnglishAuction_registerMyMethods_157__Fun : global::haxe.lang.Function {
+		
+		public EnglishAuction_registerMyMethods_157__Fun(global::englishauction.EnglishAuction _gthis) : base(1, 0) {
+			#line 157 "/my-component/src/englishauction/EnglishAuction.hx"
+			this._gthis = _gthis;
+		}
+		#line default
+		
+		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
+			#line 157 "/my-component/src/englishauction/EnglishAuction.hx"
+			global::maglev.MagLevArray args = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevArray) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevArray) (__fn_dyn1) )) );
+			string auctionId = (((global::maglev.MagLevString) (args.@get(0)) )).getString();
+			#line 159 "/my-component/src/englishauction/EnglishAuction.hx"
+			global::maglev.MagLevResult result = global::maglev.MagLevResult.createAsync();
+			this._gthis.auctionRepo.FindById(auctionId, new global::englishauction.EnglishAuction_registerMyMethods_160__Fun(result));
+			#line 170 "/my-component/src/englishauction/EnglishAuction.hx"
+			return result;
+		}
+		#line default
+		
+		public global::englishauction.EnglishAuction _gthis;
+		
+	}
+}
+
+
+
+#pragma warning disable 109, 114, 219, 429, 168, 162
+namespace englishauction {
+	public class EnglishAuction_registerMyMethods_175__Fun : global::haxe.lang.Function {
+		
+		public EnglishAuction_registerMyMethods_175__Fun(global::maglev.MagLevResult result) : base(1, 0) {
+			#line 176 "/my-component/src/englishauction/EnglishAuction.hx"
+			this.result = result;
+		}
+		#line default
+		
+		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
+			#line 175 "/my-component/src/englishauction/EnglishAuction.hx"
+			global::englishauction.AuctionModel auction = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::englishauction.AuctionModel) (((object) (__fn_float1) )) )) : (((global::englishauction.AuctionModel) (__fn_dyn1) )) );
+			if (( auction == null )) {
+				#line 177 "/my-component/src/englishauction/EnglishAuction.hx"
+				global::maglev.MagLevError error = global::maglev.MagLevError.create(0, "auction not found", global::maglev.MagLevNull.create());
+				this.result.setError(error);
+			}
+			else {
+				#line 180 "/my-component/src/englishauction/EnglishAuction.hx"
+				double priceIncrement = auction.priceIncrement;
+				global::maglev.MagLevNumber ret = global::maglev.MagLevNumber.fromFloat(priceIncrement);
+				#line 182 "/my-component/src/englishauction/EnglishAuction.hx"
+				this.result.setResult(ret);
+			}
+			
+			#line 176 "/my-component/src/englishauction/EnglishAuction.hx"
+			return null;
+		}
+		#line default
+		
+		public global::maglev.MagLevResult result;
+		
+	}
+}
+
+
+
+#pragma warning disable 109, 114, 219, 429, 168, 162
+namespace englishauction {
+	public class EnglishAuction_registerMyMethods_172__Fun : global::haxe.lang.Function {
+		
+		public EnglishAuction_registerMyMethods_172__Fun(global::englishauction.EnglishAuction _gthis) : base(1, 0) {
+			#line 172 "/my-component/src/englishauction/EnglishAuction.hx"
+			this._gthis = _gthis;
+		}
+		#line default
+		
+		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
+			#line 172 "/my-component/src/englishauction/EnglishAuction.hx"
+			global::maglev.MagLevArray args = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevArray) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevArray) (__fn_dyn1) )) );
+			string auctionId = (((global::maglev.MagLevString) (args.@get(0)) )).getString();
+			#line 174 "/my-component/src/englishauction/EnglishAuction.hx"
+			global::maglev.MagLevResult result = global::maglev.MagLevResult.createAsync();
+			this._gthis.auctionRepo.FindById(auctionId, new global::englishauction.EnglishAuction_registerMyMethods_175__Fun(result));
+			#line 185 "/my-component/src/englishauction/EnglishAuction.hx"
+			return result;
+		}
+		#line default
+		
+		public global::englishauction.EnglishAuction _gthis;
+		
+	}
+}
+
+
+
+#pragma warning disable 109, 114, 219, 429, 168, 162
+namespace englishauction {
 	public class EnglishAuction_registerMyMethods_190__Fun : global::haxe.lang.Function {
 		
-		public EnglishAuction_registerMyMethods_190__Fun(global::englishauction.EnglishAuction _gthis) : base(1, 0) {
+		public EnglishAuction_registerMyMethods_190__Fun(global::maglev.MagLevResult result) : base(1, 0) {
+			#line 191 "/my-component/src/englishauction/EnglishAuction.hx"
+			this.result = result;
+		}
+		#line default
+		
+		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
 			#line 190 "/my-component/src/englishauction/EnglishAuction.hx"
-			this._gthis = _gthis;
-		}
-		#line default
-		
-		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 190 "/my-component/src/englishauction/EnglishAuction.hx"
-			global::maglev.MagLevArray args = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevArray) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevArray) (__fn_dyn1) )) );
-			string auctionId = (((global::maglev.MagLevString) (args.@get(0)) )).getString();
-			#line 192 "/my-component/src/englishauction/EnglishAuction.hx"
-			global::maglev.MagLevResult result = global::maglev.MagLevResult.createAsync();
-			this._gthis.bidRepo.GetNumberOfBids(auctionId, new global::englishauction.EnglishAuction_registerMyMethods_193__Fun(result));
-			#line 196 "/my-component/src/englishauction/EnglishAuction.hx"
-			return result;
-		}
-		#line default
-		
-		public global::englishauction.EnglishAuction _gthis;
-		
-	}
-}
-
-
-
-#pragma warning disable 109, 114, 219, 429, 168, 162
-namespace englishauction {
-	public class EnglishAuction_registerMyMethods_201__Fun : global::haxe.lang.Function {
-		
-		public EnglishAuction_registerMyMethods_201__Fun(global::maglev.MagLevResult result) : base(1, 0) {
-			#line 202 "/my-component/src/englishauction/EnglishAuction.hx"
-			this.result = result;
-		}
-		#line default
-		
-		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 201 "/my-component/src/englishauction/EnglishAuction.hx"
 			global::englishauction.AuctionModel auction = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::englishauction.AuctionModel) (((object) (__fn_float1) )) )) : (((global::englishauction.AuctionModel) (__fn_dyn1) )) );
 			if (( auction == null )) {
-				#line 203 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 192 "/my-component/src/englishauction/EnglishAuction.hx"
 				global::maglev.MagLevError error = global::maglev.MagLevError.create(0, "auction not found", global::maglev.MagLevNull.create());
 				this.result.setError(error);
 			}
 			else {
-				#line 206 "/my-component/src/englishauction/EnglishAuction.hx"
-				double priceIncrement = auction.priceIncrement;
-				global::maglev.MagLevNumber ret = global::maglev.MagLevNumber.fromFloat(priceIncrement);
-				#line 208 "/my-component/src/englishauction/EnglishAuction.hx"
-				this.result.setResult(ret);
-			}
-			
-			#line 202 "/my-component/src/englishauction/EnglishAuction.hx"
-			return null;
-		}
-		#line default
-		
-		public global::maglev.MagLevResult result;
-		
-	}
-}
-
-
-
-#pragma warning disable 109, 114, 219, 429, 168, 162
-namespace englishauction {
-	public class EnglishAuction_registerMyMethods_198__Fun : global::haxe.lang.Function {
-		
-		public EnglishAuction_registerMyMethods_198__Fun(global::englishauction.EnglishAuction _gthis) : base(1, 0) {
-			#line 198 "/my-component/src/englishauction/EnglishAuction.hx"
-			this._gthis = _gthis;
-		}
-		#line default
-		
-		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 198 "/my-component/src/englishauction/EnglishAuction.hx"
-			global::maglev.MagLevArray args = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevArray) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevArray) (__fn_dyn1) )) );
-			string auctionId = (((global::maglev.MagLevString) (args.@get(0)) )).getString();
-			#line 200 "/my-component/src/englishauction/EnglishAuction.hx"
-			global::maglev.MagLevResult result = global::maglev.MagLevResult.createAsync();
-			this._gthis.auctionRepo.FindById(auctionId, new global::englishauction.EnglishAuction_registerMyMethods_201__Fun(result));
-			#line 211 "/my-component/src/englishauction/EnglishAuction.hx"
-			return result;
-		}
-		#line default
-		
-		public global::englishauction.EnglishAuction _gthis;
-		
-	}
-}
-
-
-
-#pragma warning disable 109, 114, 219, 429, 168, 162
-namespace englishauction {
-	public class EnglishAuction_registerMyMethods_216__Fun : global::haxe.lang.Function {
-		
-		public EnglishAuction_registerMyMethods_216__Fun(global::maglev.MagLevResult result) : base(1, 0) {
-			#line 217 "/my-component/src/englishauction/EnglishAuction.hx"
-			this.result = result;
-		}
-		#line default
-		
-		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 216 "/my-component/src/englishauction/EnglishAuction.hx"
-			global::englishauction.AuctionModel auction = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::englishauction.AuctionModel) (((object) (__fn_float1) )) )) : (((global::englishauction.AuctionModel) (__fn_dyn1) )) );
-			if (( auction == null )) {
-				#line 218 "/my-component/src/englishauction/EnglishAuction.hx"
-				global::maglev.MagLevError error = global::maglev.MagLevError.create(0, "auction not found", global::maglev.MagLevNull.create());
-				this.result.setError(error);
-			}
-			else {
-				#line 221 "/my-component/src/englishauction/EnglishAuction.hx"
-				double priceIncrement = auction.priceIncrement;
-				global::maglev.MagLevNumber ret = global::maglev.MagLevNumber.fromFloat(priceIncrement);
-				#line 223 "/my-component/src/englishauction/EnglishAuction.hx"
-				this.result.setResult(ret);
-			}
-			
-			#line 217 "/my-component/src/englishauction/EnglishAuction.hx"
-			return null;
-		}
-		#line default
-		
-		public global::maglev.MagLevResult result;
-		
-	}
-}
-
-
-
-#pragma warning disable 109, 114, 219, 429, 168, 162
-namespace englishauction {
-	public class EnglishAuction_registerMyMethods_213__Fun : global::haxe.lang.Function {
-		
-		public EnglishAuction_registerMyMethods_213__Fun(global::englishauction.EnglishAuction _gthis) : base(1, 0) {
-			#line 213 "/my-component/src/englishauction/EnglishAuction.hx"
-			this._gthis = _gthis;
-		}
-		#line default
-		
-		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 213 "/my-component/src/englishauction/EnglishAuction.hx"
-			global::maglev.MagLevArray args = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevArray) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevArray) (__fn_dyn1) )) );
-			string auctionId = (((global::maglev.MagLevString) (args.@get(0)) )).getString();
-			#line 215 "/my-component/src/englishauction/EnglishAuction.hx"
-			global::maglev.MagLevResult result = global::maglev.MagLevResult.createAsync();
-			this._gthis.auctionRepo.FindById(auctionId, new global::englishauction.EnglishAuction_registerMyMethods_216__Fun(result));
-			#line 226 "/my-component/src/englishauction/EnglishAuction.hx"
-			return result;
-		}
-		#line default
-		
-		public global::englishauction.EnglishAuction _gthis;
-		
-	}
-}
-
-
-
-#pragma warning disable 109, 114, 219, 429, 168, 162
-namespace englishauction {
-	public class EnglishAuction_registerMyMethods_231__Fun : global::haxe.lang.Function {
-		
-		public EnglishAuction_registerMyMethods_231__Fun(global::maglev.MagLevResult result) : base(1, 0) {
-			#line 232 "/my-component/src/englishauction/EnglishAuction.hx"
-			this.result = result;
-		}
-		#line default
-		
-		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 231 "/my-component/src/englishauction/EnglishAuction.hx"
-			global::englishauction.AuctionModel auction = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::englishauction.AuctionModel) (((object) (__fn_float1) )) )) : (((global::englishauction.AuctionModel) (__fn_dyn1) )) );
-			if (( auction == null )) {
-				#line 233 "/my-component/src/englishauction/EnglishAuction.hx"
-				global::maglev.MagLevError error = global::maglev.MagLevError.create(0, "auction not found", global::maglev.MagLevNull.create());
-				this.result.setError(error);
-			}
-			else {
-				#line 236 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 195 "/my-component/src/englishauction/EnglishAuction.hx"
 				double reservePrice = auction.reservePrice;
 				global::maglev.MagLevNumber ret = global::maglev.MagLevNumber.fromFloat(reservePrice);
-				#line 238 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 197 "/my-component/src/englishauction/EnglishAuction.hx"
 				this.result.setResult(ret);
 			}
 			
-			#line 232 "/my-component/src/englishauction/EnglishAuction.hx"
+			#line 191 "/my-component/src/englishauction/EnglishAuction.hx"
 			return null;
 		}
 		#line default
@@ -1330,22 +1243,22 @@ namespace englishauction {
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
 namespace englishauction {
-	public class EnglishAuction_registerMyMethods_228__Fun : global::haxe.lang.Function {
+	public class EnglishAuction_registerMyMethods_187__Fun : global::haxe.lang.Function {
 		
-		public EnglishAuction_registerMyMethods_228__Fun(global::englishauction.EnglishAuction _gthis) : base(1, 0) {
-			#line 228 "/my-component/src/englishauction/EnglishAuction.hx"
+		public EnglishAuction_registerMyMethods_187__Fun(global::englishauction.EnglishAuction _gthis) : base(1, 0) {
+			#line 187 "/my-component/src/englishauction/EnglishAuction.hx"
 			this._gthis = _gthis;
 		}
 		#line default
 		
 		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 228 "/my-component/src/englishauction/EnglishAuction.hx"
+			#line 187 "/my-component/src/englishauction/EnglishAuction.hx"
 			global::maglev.MagLevArray args = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevArray) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevArray) (__fn_dyn1) )) );
 			string auctionId = (((global::maglev.MagLevString) (args.@get(0)) )).getString();
-			#line 230 "/my-component/src/englishauction/EnglishAuction.hx"
+			#line 189 "/my-component/src/englishauction/EnglishAuction.hx"
 			global::maglev.MagLevResult result = global::maglev.MagLevResult.createAsync();
-			this._gthis.auctionRepo.FindById(auctionId, new global::englishauction.EnglishAuction_registerMyMethods_231__Fun(result));
-			#line 241 "/my-component/src/englishauction/EnglishAuction.hx"
+			this._gthis.auctionRepo.FindById(auctionId, new global::englishauction.EnglishAuction_registerMyMethods_190__Fun(result));
+			#line 200 "/my-component/src/englishauction/EnglishAuction.hx"
 			return result;
 		}
 		#line default
@@ -1359,31 +1272,31 @@ namespace englishauction {
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
 namespace englishauction {
-	public class EnglishAuction_registerMyMethods_246__Fun : global::haxe.lang.Function {
+	public class EnglishAuction_registerMyMethods_205__Fun : global::haxe.lang.Function {
 		
-		public EnglishAuction_registerMyMethods_246__Fun(global::maglev.MagLevResult result) : base(1, 0) {
-			#line 247 "/my-component/src/englishauction/EnglishAuction.hx"
+		public EnglishAuction_registerMyMethods_205__Fun(global::maglev.MagLevResult result) : base(1, 0) {
+			#line 206 "/my-component/src/englishauction/EnglishAuction.hx"
 			this.result = result;
 		}
 		#line default
 		
 		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 246 "/my-component/src/englishauction/EnglishAuction.hx"
+			#line 205 "/my-component/src/englishauction/EnglishAuction.hx"
 			global::englishauction.AuctionModel auction = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::englishauction.AuctionModel) (((object) (__fn_float1) )) )) : (((global::englishauction.AuctionModel) (__fn_dyn1) )) );
 			if (( auction == null )) {
-				#line 248 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 207 "/my-component/src/englishauction/EnglishAuction.hx"
 				global::maglev.MagLevError error = global::maglev.MagLevError.create(0, "auction not found", global::maglev.MagLevNull.create());
 				this.result.setError(error);
 			}
 			else {
-				#line 251 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 210 "/my-component/src/englishauction/EnglishAuction.hx"
 				double startingPrice = auction.startingPrice;
 				global::maglev.MagLevNumber ret = global::maglev.MagLevNumber.fromFloat(startingPrice);
-				#line 253 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 212 "/my-component/src/englishauction/EnglishAuction.hx"
 				this.result.setResult(ret);
 			}
 			
-			#line 247 "/my-component/src/englishauction/EnglishAuction.hx"
+			#line 206 "/my-component/src/englishauction/EnglishAuction.hx"
 			return null;
 		}
 		#line default
@@ -1397,22 +1310,22 @@ namespace englishauction {
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
 namespace englishauction {
-	public class EnglishAuction_registerMyMethods_243__Fun : global::haxe.lang.Function {
+	public class EnglishAuction_registerMyMethods_202__Fun : global::haxe.lang.Function {
 		
-		public EnglishAuction_registerMyMethods_243__Fun(global::englishauction.EnglishAuction _gthis) : base(1, 0) {
-			#line 243 "/my-component/src/englishauction/EnglishAuction.hx"
+		public EnglishAuction_registerMyMethods_202__Fun(global::englishauction.EnglishAuction _gthis) : base(1, 0) {
+			#line 202 "/my-component/src/englishauction/EnglishAuction.hx"
 			this._gthis = _gthis;
 		}
 		#line default
 		
 		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 243 "/my-component/src/englishauction/EnglishAuction.hx"
+			#line 202 "/my-component/src/englishauction/EnglishAuction.hx"
 			global::maglev.MagLevArray args = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevArray) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevArray) (__fn_dyn1) )) );
 			string auctionId = (((global::maglev.MagLevString) (args.@get(0)) )).getString();
-			#line 245 "/my-component/src/englishauction/EnglishAuction.hx"
+			#line 204 "/my-component/src/englishauction/EnglishAuction.hx"
 			global::maglev.MagLevResult result = global::maglev.MagLevResult.createAsync();
-			this._gthis.auctionRepo.FindById(auctionId, new global::englishauction.EnglishAuction_registerMyMethods_246__Fun(result));
-			#line 256 "/my-component/src/englishauction/EnglishAuction.hx"
+			this._gthis.auctionRepo.FindById(auctionId, new global::englishauction.EnglishAuction_registerMyMethods_205__Fun(result));
+			#line 215 "/my-component/src/englishauction/EnglishAuction.hx"
 			return result;
 		}
 		#line default
@@ -1426,35 +1339,35 @@ namespace englishauction {
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
 namespace englishauction {
-	public class EnglishAuction_registerMyMethods_267__Fun : global::haxe.lang.Function {
+	public class EnglishAuction_registerMyMethods_226__Fun : global::haxe.lang.Function {
 		
-		public EnglishAuction_registerMyMethods_267__Fun(global::maglev.MagLevResult result, double[] highestBid, global::englishauction.AuctionModel auction) : base(1, 0) {
-			#line 267 "/my-component/src/englishauction/EnglishAuction.hx"
+		public EnglishAuction_registerMyMethods_226__Fun(global::maglev.MagLevResult result, double[] highestBid, global::englishauction.AuctionModel auction) : base(1, 0) {
+			#line 226 "/my-component/src/englishauction/EnglishAuction.hx"
 			this.result = result;
-			#line 267 "/my-component/src/englishauction/EnglishAuction.hx"
+			#line 226 "/my-component/src/englishauction/EnglishAuction.hx"
 			this.highestBid = highestBid;
-			#line 267 "/my-component/src/englishauction/EnglishAuction.hx"
+			#line 226 "/my-component/src/englishauction/EnglishAuction.hx"
 			this.auction = auction;
 		}
 		#line default
 		
 		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 267 "/my-component/src/englishauction/EnglishAuction.hx"
+			#line 226 "/my-component/src/englishauction/EnglishAuction.hx"
 			global::Array<object> bids = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::Array<object>) (global::Array<object>.__hx_cast<object>(((global::Array) (((object) (__fn_float1) )) ))) )) : (((global::Array<object>) (global::Array<object>.__hx_cast<object>(((global::Array) (__fn_dyn1) ))) )) );
 			if (( bids.length > 0 )) {
-				#line 269 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 228 "/my-component/src/englishauction/EnglishAuction.hx"
 				this.highestBid[0] = ((global::englishauction.BidModel) (bids[0]) ).price;
 			}
 			
-			#line 272 "/my-component/src/englishauction/EnglishAuction.hx"
+			#line 231 "/my-component/src/englishauction/EnglishAuction.hx"
 			double minBid = 0.00;
 			minBid = global::System.Math.Max(((double) (minBid) ), ((double) (( this.highestBid[0] + this.auction.priceIncrement )) ));
-			#line 274 "/my-component/src/englishauction/EnglishAuction.hx"
+			#line 233 "/my-component/src/englishauction/EnglishAuction.hx"
 			minBid = global::System.Math.Max(((double) (minBid) ), ((double) (this.auction.startingPrice) ));
-			#line 276 "/my-component/src/englishauction/EnglishAuction.hx"
+			#line 235 "/my-component/src/englishauction/EnglishAuction.hx"
 			global::maglev.MagLevNumber ret = global::maglev.MagLevNumber.fromFloat(minBid);
 			this.result.setResult(ret);
-			#line 267 "/my-component/src/englishauction/EnglishAuction.hx"
+			#line 226 "/my-component/src/englishauction/EnglishAuction.hx"
 			return null;
 		}
 		#line default
@@ -1472,34 +1385,34 @@ namespace englishauction {
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
 namespace englishauction {
-	public class EnglishAuction_registerMyMethods_261__Fun : global::haxe.lang.Function {
+	public class EnglishAuction_registerMyMethods_220__Fun : global::haxe.lang.Function {
 		
-		public EnglishAuction_registerMyMethods_261__Fun(global::maglev.MagLevResult result, string auctionId, global::englishauction.EnglishAuction _gthis) : base(1, 0) {
-			#line 262 "/my-component/src/englishauction/EnglishAuction.hx"
+		public EnglishAuction_registerMyMethods_220__Fun(global::maglev.MagLevResult result, string auctionId, global::englishauction.EnglishAuction _gthis) : base(1, 0) {
+			#line 221 "/my-component/src/englishauction/EnglishAuction.hx"
 			this.result = result;
-			#line 262 "/my-component/src/englishauction/EnglishAuction.hx"
+			#line 221 "/my-component/src/englishauction/EnglishAuction.hx"
 			this.auctionId = auctionId;
-			#line 262 "/my-component/src/englishauction/EnglishAuction.hx"
+			#line 221 "/my-component/src/englishauction/EnglishAuction.hx"
 			this._gthis = _gthis;
 		}
 		#line default
 		
 		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
 			unchecked {
-				#line 261 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 220 "/my-component/src/englishauction/EnglishAuction.hx"
 				global::englishauction.AuctionModel auction = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::englishauction.AuctionModel) (((object) (__fn_float1) )) )) : (((global::englishauction.AuctionModel) (__fn_dyn1) )) );
 				if (( auction == null )) {
-					#line 263 "/my-component/src/englishauction/EnglishAuction.hx"
+					#line 222 "/my-component/src/englishauction/EnglishAuction.hx"
 					global::maglev.MagLevError error = global::maglev.MagLevError.create(0, "auction not found", global::maglev.MagLevNull.create());
 					this.result.setError(error);
 				}
 				else {
-					#line 266 "/my-component/src/englishauction/EnglishAuction.hx"
+					#line 225 "/my-component/src/englishauction/EnglishAuction.hx"
 					double[] highestBid = new double[]{((double) (0) )};
-					this._gthis.bidRepo.GetHighestBids(this.auctionId, 1, new global::englishauction.EnglishAuction_registerMyMethods_267__Fun(this.result, highestBid, auction));
+					this._gthis.bidRepo.GetHighestBids(this.auctionId, 1, new global::englishauction.EnglishAuction_registerMyMethods_226__Fun(this.result, highestBid, auction));
 				}
 				
-				#line 262 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 221 "/my-component/src/englishauction/EnglishAuction.hx"
 				return null;
 			}
 			#line default
@@ -1519,22 +1432,22 @@ namespace englishauction {
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
 namespace englishauction {
-	public class EnglishAuction_registerMyMethods_258__Fun : global::haxe.lang.Function {
+	public class EnglishAuction_registerMyMethods_217__Fun : global::haxe.lang.Function {
 		
-		public EnglishAuction_registerMyMethods_258__Fun(global::englishauction.EnglishAuction _gthis) : base(1, 0) {
-			#line 258 "/my-component/src/englishauction/EnglishAuction.hx"
+		public EnglishAuction_registerMyMethods_217__Fun(global::englishauction.EnglishAuction _gthis) : base(1, 0) {
+			#line 217 "/my-component/src/englishauction/EnglishAuction.hx"
 			this._gthis = _gthis;
 		}
 		#line default
 		
 		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 258 "/my-component/src/englishauction/EnglishAuction.hx"
+			#line 217 "/my-component/src/englishauction/EnglishAuction.hx"
 			global::maglev.MagLevArray args = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevArray) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevArray) (__fn_dyn1) )) );
 			string auctionId = (((global::maglev.MagLevString) (args.@get(0)) )).getString();
-			#line 260 "/my-component/src/englishauction/EnglishAuction.hx"
+			#line 219 "/my-component/src/englishauction/EnglishAuction.hx"
 			global::maglev.MagLevResult result = global::maglev.MagLevResult.createAsync();
-			this._gthis.auctionRepo.FindById(auctionId, new global::englishauction.EnglishAuction_registerMyMethods_261__Fun(result, auctionId, this._gthis));
-			#line 281 "/my-component/src/englishauction/EnglishAuction.hx"
+			this._gthis.auctionRepo.FindById(auctionId, new global::englishauction.EnglishAuction_registerMyMethods_220__Fun(result, auctionId, this._gthis));
+			#line 240 "/my-component/src/englishauction/EnglishAuction.hx"
 			return result;
 		}
 		#line default
@@ -1548,38 +1461,38 @@ namespace englishauction {
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
 namespace englishauction {
-	public class EnglishAuction_registerMyMethods_290__Fun : global::haxe.lang.Function {
+	public class EnglishAuction_registerMyMethods_249__Fun : global::haxe.lang.Function {
 		
-		public EnglishAuction_registerMyMethods_290__Fun(global::maglev.MagLevResult result, int now) : base(1, 0) {
-			#line 291 "/my-component/src/englishauction/EnglishAuction.hx"
+		public EnglishAuction_registerMyMethods_249__Fun(global::maglev.MagLevResult result, int now) : base(1, 0) {
+			#line 250 "/my-component/src/englishauction/EnglishAuction.hx"
 			this.result = result;
-			#line 291 "/my-component/src/englishauction/EnglishAuction.hx"
+			#line 250 "/my-component/src/englishauction/EnglishAuction.hx"
 			this.now = now;
 		}
 		#line default
 		
 		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 290 "/my-component/src/englishauction/EnglishAuction.hx"
+			#line 249 "/my-component/src/englishauction/EnglishAuction.hx"
 			global::englishauction.AuctionModel auction = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::englishauction.AuctionModel) (((object) (__fn_float1) )) )) : (((global::englishauction.AuctionModel) (__fn_dyn1) )) );
 			if (( auction == null )) {
-				#line 292 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 251 "/my-component/src/englishauction/EnglishAuction.hx"
 				global::maglev.MagLevError error = global::maglev.MagLevError.create(0, "auction not found", global::maglev.MagLevNull.create());
 				this.result.setError(error);
 			}
 			else {
-				#line 295 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 254 "/my-component/src/englishauction/EnglishAuction.hx"
 				int timeRemaining = ((int) (((double) (( auction.end - this.now )) )) );
 				if (( timeRemaining < 0 )) {
-					#line 297 "/my-component/src/englishauction/EnglishAuction.hx"
+					#line 256 "/my-component/src/englishauction/EnglishAuction.hx"
 					timeRemaining = 0;
 				}
 				
-				#line 299 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 258 "/my-component/src/englishauction/EnglishAuction.hx"
 				global::maglev.MagLevNumber ret = global::maglev.MagLevNumber.fromInt(timeRemaining);
 				this.result.setResult(ret);
 			}
 			
-			#line 291 "/my-component/src/englishauction/EnglishAuction.hx"
+			#line 250 "/my-component/src/englishauction/EnglishAuction.hx"
 			return null;
 		}
 		#line default
@@ -1595,132 +1508,232 @@ namespace englishauction {
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
 namespace englishauction {
-	public class EnglishAuction_registerMyMethods_283__Fun : global::haxe.lang.Function {
+	public class EnglishAuction_registerMyMethods_242__Fun : global::haxe.lang.Function {
 		
-		public EnglishAuction_registerMyMethods_283__Fun(global::englishauction.EnglishAuction _gthis) : base(1, 0) {
-			#line 283 "/my-component/src/englishauction/EnglishAuction.hx"
+		public EnglishAuction_registerMyMethods_242__Fun(global::englishauction.EnglishAuction _gthis) : base(1, 0) {
+			#line 242 "/my-component/src/englishauction/EnglishAuction.hx"
 			this._gthis = _gthis;
 		}
 		#line default
 		
 		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
 			unchecked {
-				#line 283 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 242 "/my-component/src/englishauction/EnglishAuction.hx"
 				global::maglev.MagLevArray args = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevArray) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevArray) (__fn_dyn1) )) );
 				string auctionId = (((global::maglev.MagLevString) (args.@get(0)) )).getString();
-				#line 285 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 244 "/my-component/src/englishauction/EnglishAuction.hx"
 				global::maglev.MagLevResult result = global::maglev.MagLevResult.createAsync();
 				global::Date _this = new global::Date(((global::System.DateTime) (global::System.DateTime.Now) ));
 				int now = ((int) (( ((double) (((long) (( ((long) (global::System.TimeZone.CurrentTimeZone.ToUniversalTime(((global::System.DateTime) (_this.date) )).Ticks) ) - ((long) (global::Date.epochTicks) ) )) )) ) / ((double) (global::System.TimeSpan.TicksPerMillisecond) ) )) );
-				#line 287 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 246 "/my-component/src/englishauction/EnglishAuction.hx"
 				if (( args.size() > 1 )) {
-					#line 288 "/my-component/src/englishauction/EnglishAuction.hx"
+					#line 247 "/my-component/src/englishauction/EnglishAuction.hx"
 					now = (((global::maglev.MagLevNumber) (args.@get(1)) )).getInt();
 				}
 				
+				#line 249 "/my-component/src/englishauction/EnglishAuction.hx"
+				this._gthis.auctionRepo.FindById(auctionId, new global::englishauction.EnglishAuction_registerMyMethods_249__Fun(result, now));
+				#line 262 "/my-component/src/englishauction/EnglishAuction.hx"
+				return result;
+			}
+			#line default
+		}
+		
+		
+		public global::englishauction.EnglishAuction _gthis;
+		
+	}
+}
+
+
+
+#pragma warning disable 109, 114, 219, 429, 168, 162
+namespace englishauction {
+	public class EnglishAuction_registerMyMethods_280__Fun : global::haxe.lang.Function {
+		
+		public EnglishAuction_registerMyMethods_280__Fun(global::maglev.MagLevResult result, global::englishauction.EnglishAuction _gthis) : base(1, 0) {
+			#line 280 "/my-component/src/englishauction/EnglishAuction.hx"
+			this.result = result;
+			#line 280 "/my-component/src/englishauction/EnglishAuction.hx"
+			this._gthis = _gthis;
+		}
+		#line default
+		
+		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
+			#line 280 "/my-component/src/englishauction/EnglishAuction.hx"
+			global::Array<object> auctions = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::Array<object>) (global::Array<object>.__hx_cast<object>(((global::Array) (((object) (__fn_float1) )) ))) )) : (((global::Array<object>) (global::Array<object>.__hx_cast<object>(((global::Array) (__fn_dyn1) ))) )) );
+			global::maglev.MagLevArray results = global::maglev.MagLevArray.create();
+			#line 282 "/my-component/src/englishauction/EnglishAuction.hx"
+			{
+				#line 282 "/my-component/src/englishauction/EnglishAuction.hx"
+				int _g = 0;
+				#line 282 "/my-component/src/englishauction/EnglishAuction.hx"
+				while (( _g < auctions.length )) {
+					#line 282 "/my-component/src/englishauction/EnglishAuction.hx"
+					global::englishauction.AuctionModel auction = ((global::englishauction.AuctionModel) (auctions[_g]) );
+					#line 282 "/my-component/src/englishauction/EnglishAuction.hx"
+					 ++ _g;
+					global::maglev.MagLevObject result1 = this._gthis.auctionModelToMagLevObject(auction);
+					#line 284 "/my-component/src/englishauction/EnglishAuction.hx"
+					results.push(result1);
+				}
+				
+			}
+			
+			#line 286 "/my-component/src/englishauction/EnglishAuction.hx"
+			this.result.setResult(results);
+			#line 280 "/my-component/src/englishauction/EnglishAuction.hx"
+			return null;
+		}
+		#line default
+		
+		public global::maglev.MagLevResult result;
+		
+		public global::englishauction.EnglishAuction _gthis;
+		
+	}
+}
+
+
+
+#pragma warning disable 109, 114, 219, 429, 168, 162
+namespace englishauction {
+	public class EnglishAuction_registerMyMethods_266__Fun : global::haxe.lang.Function {
+		
+		public EnglishAuction_registerMyMethods_266__Fun(global::englishauction.EnglishAuction _gthis) : base(1, 0) {
+			#line 266 "/my-component/src/englishauction/EnglishAuction.hx"
+			this._gthis = _gthis;
+		}
+		#line default
+		
+		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
+			unchecked {
+				#line 266 "/my-component/src/englishauction/EnglishAuction.hx"
+				global::maglev.MagLevArray args = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevArray) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevArray) (__fn_dyn1) )) );
+				int endfrom = (((global::maglev.MagLevNumber) (args.@get(0)) )).getInt();
+				#line 268 "/my-component/src/englishauction/EnglishAuction.hx"
+				int endto = (((global::maglev.MagLevNumber) (args.@get(1)) )).getInt();
+				int page = (((global::maglev.MagLevNumber) (args.@get(2)) )).getInt();
+				#line 270 "/my-component/src/englishauction/EnglishAuction.hx"
+				int perpage = (((global::maglev.MagLevNumber) (args.@get(3)) )).getInt();
+				string sort = "end";
+				#line 272 "/my-component/src/englishauction/EnglishAuction.hx"
+				bool asc = true;
+				if (( args.size() > 4 )) {
+					#line 274 "/my-component/src/englishauction/EnglishAuction.hx"
+					sort = (((global::maglev.MagLevString) (args.@get(4)) )).getString();
+				}
+				
+				#line 276 "/my-component/src/englishauction/EnglishAuction.hx"
+				if (( args.size() > 5 )) {
+					#line 277 "/my-component/src/englishauction/EnglishAuction.hx"
+					asc = (((global::maglev.MagLevBoolean) (args.@get(5)) )).getBool();
+				}
+				
+				#line 279 "/my-component/src/englishauction/EnglishAuction.hx"
+				global::maglev.MagLevResult result = global::maglev.MagLevResult.createAsync();
+				this._gthis.auctionRepo.FindAuctionsEnding(endfrom, endto, page, perpage, sort, asc, new global::englishauction.EnglishAuction_registerMyMethods_280__Fun(result, this._gthis));
+				#line 288 "/my-component/src/englishauction/EnglishAuction.hx"
+				return result;
+			}
+			#line default
+		}
+		
+		
+		public global::englishauction.EnglishAuction _gthis;
+		
+	}
+}
+
+
+
+#pragma warning disable 109, 114, 219, 429, 168, 162
+namespace englishauction {
+	public class EnglishAuction_registerMyMethods_304__Fun : global::haxe.lang.Function {
+		
+		public EnglishAuction_registerMyMethods_304__Fun(global::maglev.MagLevResult result, global::englishauction.EnglishAuction _gthis) : base(1, 0) {
+			#line 304 "/my-component/src/englishauction/EnglishAuction.hx"
+			this.result = result;
+			#line 304 "/my-component/src/englishauction/EnglishAuction.hx"
+			this._gthis = _gthis;
+		}
+		#line default
+		
+		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
+			#line 304 "/my-component/src/englishauction/EnglishAuction.hx"
+			global::Array<object> auctions = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::Array<object>) (global::Array<object>.__hx_cast<object>(((global::Array) (((object) (__fn_float1) )) ))) )) : (((global::Array<object>) (global::Array<object>.__hx_cast<object>(((global::Array) (__fn_dyn1) ))) )) );
+			global::maglev.MagLevArray results = global::maglev.MagLevArray.create();
+			#line 306 "/my-component/src/englishauction/EnglishAuction.hx"
+			{
+				#line 306 "/my-component/src/englishauction/EnglishAuction.hx"
+				int _g = 0;
+				#line 306 "/my-component/src/englishauction/EnglishAuction.hx"
+				while (( _g < auctions.length )) {
+					#line 306 "/my-component/src/englishauction/EnglishAuction.hx"
+					global::englishauction.AuctionModel auction = ((global::englishauction.AuctionModel) (auctions[_g]) );
+					#line 306 "/my-component/src/englishauction/EnglishAuction.hx"
+					 ++ _g;
+					global::maglev.MagLevObject result1 = this._gthis.auctionModelToMagLevObject(auction);
+					#line 308 "/my-component/src/englishauction/EnglishAuction.hx"
+					results.push(result1);
+				}
+				
+			}
+			
+			#line 310 "/my-component/src/englishauction/EnglishAuction.hx"
+			this.result.setResult(results);
+			#line 304 "/my-component/src/englishauction/EnglishAuction.hx"
+			return null;
+		}
+		#line default
+		
+		public global::maglev.MagLevResult result;
+		
+		public global::englishauction.EnglishAuction _gthis;
+		
+	}
+}
+
+
+
+#pragma warning disable 109, 114, 219, 429, 168, 162
+namespace englishauction {
+	public class EnglishAuction_registerMyMethods_290__Fun : global::haxe.lang.Function {
+		
+		public EnglishAuction_registerMyMethods_290__Fun(global::englishauction.EnglishAuction _gthis) : base(1, 0) {
+			#line 290 "/my-component/src/englishauction/EnglishAuction.hx"
+			this._gthis = _gthis;
+		}
+		#line default
+		
+		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
+			unchecked {
 				#line 290 "/my-component/src/englishauction/EnglishAuction.hx"
-				this._gthis.auctionRepo.FindById(auctionId, new global::englishauction.EnglishAuction_registerMyMethods_290__Fun(result, now));
+				global::maglev.MagLevArray args = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevArray) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevArray) (__fn_dyn1) )) );
+				int endfrom = (((global::maglev.MagLevNumber) (args.@get(0)) )).getInt();
+				#line 292 "/my-component/src/englishauction/EnglishAuction.hx"
+				int endto = (((global::maglev.MagLevNumber) (args.@get(1)) )).getInt();
+				int page = (((global::maglev.MagLevNumber) (args.@get(2)) )).getInt();
+				#line 294 "/my-component/src/englishauction/EnglishAuction.hx"
+				int perpage = (((global::maglev.MagLevNumber) (args.@get(3)) )).getInt();
+				string sort = "end";
+				#line 296 "/my-component/src/englishauction/EnglishAuction.hx"
+				bool asc = true;
+				if (( args.size() > 4 )) {
+					#line 298 "/my-component/src/englishauction/EnglishAuction.hx"
+					sort = (((global::maglev.MagLevString) (args.@get(4)) )).getString();
+				}
+				
+				#line 300 "/my-component/src/englishauction/EnglishAuction.hx"
+				if (( args.size() > 5 )) {
+					#line 301 "/my-component/src/englishauction/EnglishAuction.hx"
+					asc = (((global::maglev.MagLevBoolean) (args.@get(5)) )).getBool();
+				}
+				
 				#line 303 "/my-component/src/englishauction/EnglishAuction.hx"
-				return result;
-			}
-			#line default
-		}
-		
-		
-		public global::englishauction.EnglishAuction _gthis;
-		
-	}
-}
-
-
-
-#pragma warning disable 109, 114, 219, 429, 168, 162
-namespace englishauction {
-	public class EnglishAuction_registerMyMethods_321__Fun : global::haxe.lang.Function {
-		
-		public EnglishAuction_registerMyMethods_321__Fun(global::maglev.MagLevResult result, global::englishauction.EnglishAuction _gthis) : base(1, 0) {
-			#line 321 "/my-component/src/englishauction/EnglishAuction.hx"
-			this.result = result;
-			#line 321 "/my-component/src/englishauction/EnglishAuction.hx"
-			this._gthis = _gthis;
-		}
-		#line default
-		
-		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 321 "/my-component/src/englishauction/EnglishAuction.hx"
-			global::Array<object> auctions = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::Array<object>) (global::Array<object>.__hx_cast<object>(((global::Array) (((object) (__fn_float1) )) ))) )) : (((global::Array<object>) (global::Array<object>.__hx_cast<object>(((global::Array) (__fn_dyn1) ))) )) );
-			global::maglev.MagLevArray results = global::maglev.MagLevArray.create();
-			#line 323 "/my-component/src/englishauction/EnglishAuction.hx"
-			{
-				#line 323 "/my-component/src/englishauction/EnglishAuction.hx"
-				int _g = 0;
-				#line 323 "/my-component/src/englishauction/EnglishAuction.hx"
-				while (( _g < auctions.length )) {
-					#line 323 "/my-component/src/englishauction/EnglishAuction.hx"
-					global::englishauction.AuctionModel auction = ((global::englishauction.AuctionModel) (auctions[_g]) );
-					#line 323 "/my-component/src/englishauction/EnglishAuction.hx"
-					 ++ _g;
-					global::maglev.MagLevObject result1 = this._gthis.auctionModelToMagLevObject(auction);
-					#line 325 "/my-component/src/englishauction/EnglishAuction.hx"
-					results.push(result1);
-				}
-				
-			}
-			
-			#line 327 "/my-component/src/englishauction/EnglishAuction.hx"
-			this.result.setResult(results);
-			#line 321 "/my-component/src/englishauction/EnglishAuction.hx"
-			return null;
-		}
-		#line default
-		
-		public global::maglev.MagLevResult result;
-		
-		public global::englishauction.EnglishAuction _gthis;
-		
-	}
-}
-
-
-
-#pragma warning disable 109, 114, 219, 429, 168, 162
-namespace englishauction {
-	public class EnglishAuction_registerMyMethods_307__Fun : global::haxe.lang.Function {
-		
-		public EnglishAuction_registerMyMethods_307__Fun(global::englishauction.EnglishAuction _gthis) : base(1, 0) {
-			#line 307 "/my-component/src/englishauction/EnglishAuction.hx"
-			this._gthis = _gthis;
-		}
-		#line default
-		
-		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			unchecked {
-				#line 307 "/my-component/src/englishauction/EnglishAuction.hx"
-				global::maglev.MagLevArray args = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevArray) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevArray) (__fn_dyn1) )) );
-				int endfrom = (((global::maglev.MagLevNumber) (args.@get(0)) )).getInt();
-				#line 309 "/my-component/src/englishauction/EnglishAuction.hx"
-				int endto = (((global::maglev.MagLevNumber) (args.@get(1)) )).getInt();
-				int page = (((global::maglev.MagLevNumber) (args.@get(2)) )).getInt();
-				#line 311 "/my-component/src/englishauction/EnglishAuction.hx"
-				int perpage = (((global::maglev.MagLevNumber) (args.@get(3)) )).getInt();
-				string sort = "end";
-				#line 313 "/my-component/src/englishauction/EnglishAuction.hx"
-				bool asc = true;
-				if (( args.size() > 4 )) {
-					#line 315 "/my-component/src/englishauction/EnglishAuction.hx"
-					sort = (((global::maglev.MagLevString) (args.@get(4)) )).getString();
-				}
-				
-				#line 317 "/my-component/src/englishauction/EnglishAuction.hx"
-				if (( args.size() > 5 )) {
-					#line 318 "/my-component/src/englishauction/EnglishAuction.hx"
-					asc = (((global::maglev.MagLevBoolean) (args.@get(5)) )).getBool();
-				}
-				
-				#line 320 "/my-component/src/englishauction/EnglishAuction.hx"
 				global::maglev.MagLevResult result = global::maglev.MagLevResult.createAsync();
-				this._gthis.auctionRepo.FindAuctionsEnding(endfrom, endto, page, perpage, sort, asc, new global::englishauction.EnglishAuction_registerMyMethods_321__Fun(result, this._gthis));
-				#line 329 "/my-component/src/englishauction/EnglishAuction.hx"
+				this._gthis.auctionRepo.FindAuctionsStarting(endfrom, endto, page, perpage, sort, asc, new global::englishauction.EnglishAuction_registerMyMethods_304__Fun(result, this._gthis));
+				#line 312 "/my-component/src/englishauction/EnglishAuction.hx"
 				return result;
 			}
 			#line default
@@ -1736,40 +1749,40 @@ namespace englishauction {
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
 namespace englishauction {
-	public class EnglishAuction_registerMyMethods_345__Fun : global::haxe.lang.Function {
+	public class EnglishAuction_registerMyMethods_326__Fun : global::haxe.lang.Function {
 		
-		public EnglishAuction_registerMyMethods_345__Fun(global::maglev.MagLevResult result, global::englishauction.EnglishAuction _gthis) : base(1, 0) {
-			#line 345 "/my-component/src/englishauction/EnglishAuction.hx"
+		public EnglishAuction_registerMyMethods_326__Fun(global::maglev.MagLevResult result, global::englishauction.EnglishAuction _gthis) : base(1, 0) {
+			#line 326 "/my-component/src/englishauction/EnglishAuction.hx"
 			this.result = result;
-			#line 345 "/my-component/src/englishauction/EnglishAuction.hx"
+			#line 326 "/my-component/src/englishauction/EnglishAuction.hx"
 			this._gthis = _gthis;
 		}
 		#line default
 		
 		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 345 "/my-component/src/englishauction/EnglishAuction.hx"
+			#line 326 "/my-component/src/englishauction/EnglishAuction.hx"
 			global::Array<object> auctions = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::Array<object>) (global::Array<object>.__hx_cast<object>(((global::Array) (((object) (__fn_float1) )) ))) )) : (((global::Array<object>) (global::Array<object>.__hx_cast<object>(((global::Array) (__fn_dyn1) ))) )) );
 			global::maglev.MagLevArray results = global::maglev.MagLevArray.create();
-			#line 347 "/my-component/src/englishauction/EnglishAuction.hx"
+			#line 328 "/my-component/src/englishauction/EnglishAuction.hx"
 			{
-				#line 347 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 328 "/my-component/src/englishauction/EnglishAuction.hx"
 				int _g = 0;
-				#line 347 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 328 "/my-component/src/englishauction/EnglishAuction.hx"
 				while (( _g < auctions.length )) {
-					#line 347 "/my-component/src/englishauction/EnglishAuction.hx"
+					#line 328 "/my-component/src/englishauction/EnglishAuction.hx"
 					global::englishauction.AuctionModel auction = ((global::englishauction.AuctionModel) (auctions[_g]) );
-					#line 347 "/my-component/src/englishauction/EnglishAuction.hx"
+					#line 328 "/my-component/src/englishauction/EnglishAuction.hx"
 					 ++ _g;
 					global::maglev.MagLevObject result1 = this._gthis.auctionModelToMagLevObject(auction);
-					#line 349 "/my-component/src/englishauction/EnglishAuction.hx"
+					#line 330 "/my-component/src/englishauction/EnglishAuction.hx"
 					results.push(result1);
 				}
 				
 			}
 			
-			#line 351 "/my-component/src/englishauction/EnglishAuction.hx"
+			#line 332 "/my-component/src/englishauction/EnglishAuction.hx"
 			this.result.setResult(results);
-			#line 345 "/my-component/src/englishauction/EnglishAuction.hx"
+			#line 326 "/my-component/src/englishauction/EnglishAuction.hx"
 			return null;
 		}
 		#line default
@@ -1785,139 +1798,39 @@ namespace englishauction {
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
 namespace englishauction {
-	public class EnglishAuction_registerMyMethods_331__Fun : global::haxe.lang.Function {
+	public class EnglishAuction_registerMyMethods_314__Fun : global::haxe.lang.Function {
 		
-		public EnglishAuction_registerMyMethods_331__Fun(global::englishauction.EnglishAuction _gthis) : base(1, 0) {
-			#line 331 "/my-component/src/englishauction/EnglishAuction.hx"
+		public EnglishAuction_registerMyMethods_314__Fun(global::englishauction.EnglishAuction _gthis) : base(1, 0) {
+			#line 314 "/my-component/src/englishauction/EnglishAuction.hx"
 			this._gthis = _gthis;
 		}
 		#line default
 		
 		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
 			unchecked {
-				#line 331 "/my-component/src/englishauction/EnglishAuction.hx"
-				global::maglev.MagLevArray args = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevArray) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevArray) (__fn_dyn1) )) );
-				int endfrom = (((global::maglev.MagLevNumber) (args.@get(0)) )).getInt();
-				#line 333 "/my-component/src/englishauction/EnglishAuction.hx"
-				int endto = (((global::maglev.MagLevNumber) (args.@get(1)) )).getInt();
-				int page = (((global::maglev.MagLevNumber) (args.@get(2)) )).getInt();
-				#line 335 "/my-component/src/englishauction/EnglishAuction.hx"
-				int perpage = (((global::maglev.MagLevNumber) (args.@get(3)) )).getInt();
-				string sort = "end";
-				#line 337 "/my-component/src/englishauction/EnglishAuction.hx"
-				bool asc = true;
-				if (( args.size() > 4 )) {
-					#line 339 "/my-component/src/englishauction/EnglishAuction.hx"
-					sort = (((global::maglev.MagLevString) (args.@get(4)) )).getString();
-				}
-				
-				#line 341 "/my-component/src/englishauction/EnglishAuction.hx"
-				if (( args.size() > 5 )) {
-					#line 342 "/my-component/src/englishauction/EnglishAuction.hx"
-					asc = (((global::maglev.MagLevBoolean) (args.@get(5)) )).getBool();
-				}
-				
-				#line 344 "/my-component/src/englishauction/EnglishAuction.hx"
-				global::maglev.MagLevResult result = global::maglev.MagLevResult.createAsync();
-				this._gthis.auctionRepo.FindAuctionsStarting(endfrom, endto, page, perpage, sort, asc, new global::englishauction.EnglishAuction_registerMyMethods_345__Fun(result, this._gthis));
-				#line 353 "/my-component/src/englishauction/EnglishAuction.hx"
-				return result;
-			}
-			#line default
-		}
-		
-		
-		public global::englishauction.EnglishAuction _gthis;
-		
-	}
-}
-
-
-
-#pragma warning disable 109, 114, 219, 429, 168, 162
-namespace englishauction {
-	public class EnglishAuction_registerMyMethods_367__Fun : global::haxe.lang.Function {
-		
-		public EnglishAuction_registerMyMethods_367__Fun(global::maglev.MagLevResult result, global::englishauction.EnglishAuction _gthis) : base(1, 0) {
-			#line 367 "/my-component/src/englishauction/EnglishAuction.hx"
-			this.result = result;
-			#line 367 "/my-component/src/englishauction/EnglishAuction.hx"
-			this._gthis = _gthis;
-		}
-		#line default
-		
-		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 367 "/my-component/src/englishauction/EnglishAuction.hx"
-			global::Array<object> auctions = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::Array<object>) (global::Array<object>.__hx_cast<object>(((global::Array) (((object) (__fn_float1) )) ))) )) : (((global::Array<object>) (global::Array<object>.__hx_cast<object>(((global::Array) (__fn_dyn1) ))) )) );
-			global::maglev.MagLevArray results = global::maglev.MagLevArray.create();
-			#line 369 "/my-component/src/englishauction/EnglishAuction.hx"
-			{
-				#line 369 "/my-component/src/englishauction/EnglishAuction.hx"
-				int _g = 0;
-				#line 369 "/my-component/src/englishauction/EnglishAuction.hx"
-				while (( _g < auctions.length )) {
-					#line 369 "/my-component/src/englishauction/EnglishAuction.hx"
-					global::englishauction.AuctionModel auction = ((global::englishauction.AuctionModel) (auctions[_g]) );
-					#line 369 "/my-component/src/englishauction/EnglishAuction.hx"
-					 ++ _g;
-					global::maglev.MagLevObject result1 = this._gthis.auctionModelToMagLevObject(auction);
-					#line 371 "/my-component/src/englishauction/EnglishAuction.hx"
-					results.push(result1);
-				}
-				
-			}
-			
-			#line 373 "/my-component/src/englishauction/EnglishAuction.hx"
-			this.result.setResult(results);
-			#line 367 "/my-component/src/englishauction/EnglishAuction.hx"
-			return null;
-		}
-		#line default
-		
-		public global::maglev.MagLevResult result;
-		
-		public global::englishauction.EnglishAuction _gthis;
-		
-	}
-}
-
-
-
-#pragma warning disable 109, 114, 219, 429, 168, 162
-namespace englishauction {
-	public class EnglishAuction_registerMyMethods_355__Fun : global::haxe.lang.Function {
-		
-		public EnglishAuction_registerMyMethods_355__Fun(global::englishauction.EnglishAuction _gthis) : base(1, 0) {
-			#line 355 "/my-component/src/englishauction/EnglishAuction.hx"
-			this._gthis = _gthis;
-		}
-		#line default
-		
-		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			unchecked {
-				#line 355 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 314 "/my-component/src/englishauction/EnglishAuction.hx"
 				global::maglev.MagLevArray args = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevArray) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevArray) (__fn_dyn1) )) );
 				int page = (((global::maglev.MagLevNumber) (args.@get(0)) )).getInt();
-				#line 357 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 316 "/my-component/src/englishauction/EnglishAuction.hx"
 				int perpage = (((global::maglev.MagLevNumber) (args.@get(1)) )).getInt();
 				string sort = "end";
-				#line 359 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 318 "/my-component/src/englishauction/EnglishAuction.hx"
 				bool asc = true;
 				if (( args.size() > 2 )) {
-					#line 361 "/my-component/src/englishauction/EnglishAuction.hx"
+					#line 320 "/my-component/src/englishauction/EnglishAuction.hx"
 					sort = (((global::maglev.MagLevString) (args.@get(2)) )).getString();
 				}
 				
-				#line 363 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 322 "/my-component/src/englishauction/EnglishAuction.hx"
 				if (( args.size() > 3 )) {
-					#line 364 "/my-component/src/englishauction/EnglishAuction.hx"
+					#line 323 "/my-component/src/englishauction/EnglishAuction.hx"
 					asc = (((global::maglev.MagLevBoolean) (args.@get(3)) )).getBool();
 				}
 				
-				#line 366 "/my-component/src/englishauction/EnglishAuction.hx"
+				#line 325 "/my-component/src/englishauction/EnglishAuction.hx"
 				global::maglev.MagLevResult result = global::maglev.MagLevResult.createAsync();
-				this._gthis.auctionRepo.FindOpenAuctions(page, perpage, sort, asc, new global::englishauction.EnglishAuction_registerMyMethods_367__Fun(result, this._gthis));
-				#line 375 "/my-component/src/englishauction/EnglishAuction.hx"
+				this._gthis.auctionRepo.FindOpenAuctions(page, perpage, sort, asc, new global::englishauction.EnglishAuction_registerMyMethods_326__Fun(result, this._gthis));
+				#line 334 "/my-component/src/englishauction/EnglishAuction.hx"
 				return result;
 			}
 			#line default
