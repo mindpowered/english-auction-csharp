@@ -14,3 +14,4 @@ src\englishauction\BidModel.cs
 src\englishauction\AuctionRepository.cs
 src\englishauction\AuctionModel.cs
 src\UInt.cs
+src\mindpowered\englishauction\EnglishAuction.cs

@@ -550,6 +550,8 @@ M System.Int64
 M System.Runtime.Remoting.IChannelInfo
 M haxe.CallStack
 M StringBuf
+M mindpowered.englishauction.EnglishAuction
+C mindpowered.englishauction.EnglishAuction
 end modules
 begin resources
 end resources

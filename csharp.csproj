@@ -75,6 +75,8 @@
 	
     <Compile Include="src\UInt.cs"/>
 	
+    <Compile Include="src\mindpowered\englishauction\EnglishAuction.cs"/>
+	
   </ItemGroup>
   
   <ItemGroup />
