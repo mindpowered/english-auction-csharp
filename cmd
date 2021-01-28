@@ -3,9 +3,9 @@
 /debug-
 /unsafe-
 /warn:0
-/out:bin/csharp.dll
+/out:c:/builds/mindpowered/logic/english-auction/build/vcs/csharp/bin/englishauction.dll
 /target:library
-/reference:bin/maglev.dll
+/reference:c:/builds/mindpowered/logic/english-auction/build/vcs/csharp/bin/maglev.dll
 src\EnumValue.cs
 src\englishauction\BidRepository.cs
 src\englishauction\EnglishAuction.cs

@@ -2,22 +2,22 @@
 <package>
   <metadata>
     <id>mindpowered.englishauction</id>
-    <version>0.0.61</version>
+    <version>0.0.62</version>
     <title>englishauction</title>
     <authors>Mind Powered Corporation</authors>
     <owners>Mind Powered Corporation</owners>
     <licenseUrl>https://mindpowered.dev/?ref=nuget</licenseUrl>
-    <projectUrl>https://mindpowered.dev/?ref=nuget</projectUrl>
+    <projectUrl>https://github.com/mindpowered/englishauction-csharp</projectUrl>
     <iconUrl>https://www.website.com/logo.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>EnglishAuction</description>
-    <releaseNotes>Version 0.0.61</releaseNotes>
+    <description>Online auctions with ascending price and time limit</description>
+    <releaseNotes>Version 0.0.62</releaseNotes>
     <copyright>Copyright 2020 Mind Powered Corporation</copyright>
     <tags>mindpowered</tags>
     <dependencies>
       <dependency id="mindpowered.maglev" version="*" />
     </dependencies>
-    <summary>EnglishAuction</summary>
+    <summary>Online auctions with ascending price and time limit</summary>
   </metadata>
   <files>
     <file src="bin\englishauction.dll" target="lib" />
